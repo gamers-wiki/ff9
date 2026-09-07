@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>キャラクターごとの専用コマンド - ファイナルファンタジーIX 攻略Wiki</title>
+  <meta name="description" content="FF9の専用コマンドの仕組み。ジタンの「ぬすむ」の判定と確率、ビビの「ためる」、ガーネットの「幻獣」、スタイナーの「魔法剣」、フライヤの「ジャンプ」、クイナの「たべる」、サラマンダーの「なげる」、ベアトリクスの聖剣技、使える白魔法の違い。">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://gamers-wiki.github.io/ff9/battle/commands/">
+
+  <meta property="og:site_name" content="ファイナルファンタジーIX 攻略Wiki">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="キャラクターごとの専用コマンド - ファイナルファンタジーIX 攻略Wiki">
+  <meta property="og:description" content="FF9の専用コマンドの仕組み。ジタンの「ぬすむ」の判定と確率、ビビの「ためる」、ガーネットの「幻獣」、スタイナーの「魔法剣」、フライヤの「ジャンプ」、クイナの「たべる」、サラマンダーの「なげる」、ベアトリクスの聖剣技、使える白魔法の違い。">
+  <meta property="og:url" content="https://gamers-wiki.github.io/ff9/battle/commands/">
+  <meta property="og:image" content="https://gamers-wiki.github.io/ff9/images/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="キャラクターごとの専用コマンド - ファイナルファンタジーIX 攻略Wiki">
+  <meta name="twitter:description" content="FF9の専用コマンドの仕組み。ジタンの「ぬすむ」の判定と確率、ビビの「ためる」、ガーネットの「幻獣」、スタイナーの「魔法剣」、フライヤの「ジャンプ」、クイナの「たべる」、サラマンダーの「なげる」、ベアトリクスの聖剣技、使える白魔法の違い。">
+  <meta name="twitter:image" content="https://gamers-wiki.github.io/ff9/images/ogp.png">
+
+  <link rel="icon" href="/ff9/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/ff9/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/ff9/apple-touch-icon.png">
+  <meta name="theme-color" content="#171433">
+
+  <link rel="stylesheet" href="/ff9/css/style.css?v=4bada4bf">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://gamers-wiki.github.io/ff9/"},{"@type":"ListItem","position":2,"name":"バトル","item":"https://gamers-wiki.github.io/ff9/battle/"},{"@type":"ListItem","position":3,"name":"専用コマンド","item":"https://gamers-wiki.github.io/ff9/battle/commands/"}]}</script>
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/ff9/" class="site-logo">
+        <span class="logo-mark" aria-hidden="true">✦</span>
+        <span class="logo-text">
+          <span class="logo-title">FINAL FANTASY IX</span>
+          <span class="logo-sub">攻略Wiki</span>
+        </span>
+      </a>
+      <form class="site-search" action="/ff9/search/" method="get" role="search">
+        <input type="search" name="q" placeholder="Wiki内を検索（例：ジタン、合成、チョコグラフ）" aria-label="Wiki内検索" maxlength="100">
+        <button type="submit">検索</button>
+      </form>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== グローバルナビ ===== -->
+  <nav class="global-nav" id="global-nav">
+    <ul>
+      <li><a href="/ff9/">トップ</a></li>
+      <li><a href="/ff9/story/">ストーリー攻略</a></li>
+      <li><a href="/ff9/characters/">キャラクター</a></li>
+      <li><a href="/ff9/battle/" class="current">バトル</a></li>
+      <li><a href="/ff9/abilities/">アビリティ</a></li>
+      <li><a href="/ff9/eidolons/">召喚獣</a></li>
+      <li><a href="/ff9/items/">アイテム・装備</a></li>
+      <li><a href="/ff9/monsters/">モンスター</a></li>
+      <li><a href="/ff9/chocobo/">チョコボ</a></li>
+      <li><a href="/ff9/minigames/">ミニゲーム</a></li>
+      <li><a href="/ff9/cards/">クアッドミスト</a></li>
+      <li><a href="/ff9/extra/">やり込み</a></li>
+      <li class="nav-column"><a href="/ff9/column/">解説</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== パンくず ===== -->
+  <div class="breadcrumb">
+    <ol>
+      <li><a href="/ff9/">トップ</a></li>
+      <li><a href="/ff9/battle/">バトル</a></li>
+      <li>専用コマンド</li>
+    </ol>
+  </div>
+
+  <div class="layout layout-2col">
+    <aside class="sidebar sidebar-left">
+      <div class="side-box">
+        <h2 class="side-title">メニュー</h2>
+        <ul class="side-menu">
+          <li><a href="/ff9/story/">ストーリー攻略チャート</a></li>
+          <li><a href="/ff9/characters/">キャラクター</a></li>
+          <li><a href="/ff9/battle/">バトルシステム</a></li>
+          <li><a href="/ff9/abilities/">アビリティ</a></li>
+          <li><a href="/ff9/eidolons/">召喚獣</a></li>
+          <li><a href="/ff9/items/">アイテム・装備</a></li>
+          <li><a href="/ff9/items/synthesis/">合成リスト</a></li>
+          <li><a href="/ff9/monsters/">モンスター図鑑</a></li>
+          <li><a href="/ff9/chocobo/">チョコボ</a></li>
+          <li><a href="/ff9/minigames/">ミニゲーム</a></li>
+          <li><a href="/ff9/cards/">クアッドミスト</a></li>
+          <li><a href="/ff9/extra/">やり込み・サブイベント</a></li>
+          <li><a href="/ff9/extra/missable/">取り返しのつかない要素</a></li>
+          <li><a href="/ff9/column/">世界設定・年表・用語集</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">キャラクター</h2>
+        <ul class="side-menu char-list">
+          <li><a href="/ff9/characters/zidane/">ジタン</a></li>
+          <li><a href="/ff9/characters/vivi/">ビビ</a></li>
+          <li><a href="/ff9/characters/garnet/">ガーネット</a></li>
+          <li><a href="/ff9/characters/steiner/">スタイナー</a></li>
+          <li><a href="/ff9/characters/freya/">フライヤ</a></li>
+          <li><a href="/ff9/characters/quina/">クイナ</a></li>
+          <li><a href="/ff9/characters/eiko/">エーコ</a></li>
+          <li><a href="/ff9/characters/amarant/">サラマンダー</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title side-title-column">解説</h2>
+        <ul class="side-menu column-list">
+          <li><a href="/ff9/column/">記事一覧</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">Wikiについて</h2>
+        <ul class="side-menu">
+          <li><a href="/ff9/about/">このWikiについて</a></li>
+          <li><a href="/ff9/contact/">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </aside>
+    <main class="content">
+
+      <div class="article-header">
+        <h1>キャラクターごとの専用コマンド</h1>
+        <div class="article-meta"><span>カテゴリ：<a href="/ff9/battle/">バトル</a></span></div>
+      </div>
+
+      <p>
+        コマンドウインドウの上から2〜3番目にある、キャラクターごとの専用コマンドの仕組み。スタイナーとフライヤ以外は、トランス中に特定の専用コマンドが「トランス時専用コマンド」に変わる（ジタンなら「秘技」が「裏技」に）。トランスが終わるまで変化前のコマンドは選べない。
+        各アビリティの性能は<a href="/ff9/abilities/">アビリティ</a>のページを参照。
+      </p>
+
+      <div class="toc" data-auto-toc></div>
+
+      <h2>ジタン：ぬすむ・秘技・裏技</h2>
+      <p>「ぬすむ」はモンスターからアイテムを盗む。くり返せば同じ敵から複数のアイテムを盗める。実行時にはまず盗みが成功するかを判定し、成功したときにどのアイテムを盗むかを判定する。</p>
+      <ol>
+        <li>対象に盗めるアイテムがなければ「何も持っていない！」と表示されて終了。</li>
+        <li>サポートアビリティ「盗賊の極意」を装備していれば成否の判定を飛ばして3へ。装備していなければ、0〜（実行者のLv＋気力）の範囲の数値Aと、0〜対象のLvの範囲の数値Bをランダムに決めて比べ、AがB以上なら成功、A未満なら「ぬすめなかった！」。</li>
+        <li>対象に設定された4つのアイテム欄を、入手確率の低い順にチェックして盗むアイテムを決める。アイテムが設定されていない欄（またはすでに盗んだ欄）が選ばれると、ほかの欄に盗めるアイテムがあっても「ぬすめなかった！」になる。</li>
+      </ol>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>アイテム欄</th><th>通常</th><th>「目利きの手触り」装備時</th></tr></thead>
+          <tbody>
+            <tr><th>アイテム欄1</th><td class="num">1／256</td><td class="num">32／256</td></tr>
+            <tr><th>アイテム欄2</th><td class="num">16／256</td><td class="num">32／256</td></tr>
+            <tr><th>アイテム欄3</th><td class="num">64／256</td><td class="num">64／256</td></tr>
+            <tr><th>アイテム欄4</th><td class="num">256／256</td><td class="num">256／256</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>「秘技」は秘技のアクションアビリティを使う。トランス中は「裏技」に変わり、裏技のアクションアビリティを使う。シナ・マーカス・ブランクの「ぬすむ」も仕組みは同じだが、サポートアビリティを装備できないので確率を上げられない。</p>
+
+      <h2>ビビ：黒魔法・W黒魔法・ためる</h2>
+      <ul>
+        <li><strong>黒魔法</strong>：沈黙状態だと選べない。トランス中は<strong>W黒魔法</strong>に変わり、黒魔法を2回連続で使う。1回目の行動でトランスゲージがゼロになっても、2回目は実行される。</li>
+        <li><strong>ためる</strong>：ビビの魔力を1.25倍にする（小数点以下切り捨て）。使うたびに上がるが99より高くはならない。上昇はバトル終了までつづき、ビビが戦闘不能になっても効果は残る（魔力24なら 24→30→37→46→57…）。「ためる」を使うと攻撃の機会が減るので、回数は通常1〜3回、長期戦でも3〜4回くらいがよい。</li>
+      </ul>
+
+      <h2>ガーネット：白魔法・召喚・幻獣</h2>
+      <ul>
+        <li><strong>白魔法</strong>・<strong>召喚</strong>：どちらも沈黙状態だと選べない。</li>
+        <li><strong>幻獣</strong>（トランス時）：同名の召喚を実行したあと、ガーネットがトランスしているかぎり、一定時間ごとに幻獣のアクションアビリティの効果が自動で発動する。自動発動時はMPもトランスゲージも消費しない。ガーネットがストップ・フリーズ・石化・猛毒・戦闘不能のいずれかのあいだは発動しない（睡眠や沈黙のときは発動する）。「おうえん」を装備していても、自動発動の効果は変わらない。</li>
+      </ul>
+
+      <h2>スタイナー：剣技・魔法剣</h2>
+      <ul>
+        <li><strong>魔法剣</strong>はパーティーにビビがいるときにしか表示されないが、ビビのATBゲージが満タンでなくても使える。スタイナーがミニマム状態のとき、ビビがコマンドを入力できない状況のとき、ビビがヒート・ミニマム・沈黙のいずれかのときは選べない。コマンドの決定から実行までのあいだにこれらの状況になると「コンビネーションがくずれた！」と表示されて失敗する。</li>
+        <li>成否を問わず、行動が終わるとスタイナーのATBゲージはゼロにもどるが、ビビのATBゲージには影響しない。選べる魔法剣の種類は、その時点でビビが使える黒魔法と対応している。ダメージはスタイナーの能力値をもとに決まり、ビビのMPも減らない。</li>
+      </ul>
+
+      <h2>フライヤ：ジャンプ・竜技</h2>
+      <ul>
+        <li><strong>ジャンプ</strong>：はるか上空へ跳んだあと、一定時間後に「ヤリ」で攻撃してから着地する。空中にいるあいだは攻撃などの対象にならず、ステータス異常の時間のカウントも止まる。「ヤリ」のダメージは前列での「たたかう」の1.5倍（「ハイジャンプ」装備時は2倍）。ミニマム状態だと通常の「ヤリ」の半分になる。</li>
+        <li>トランス中に「ジャンプ」を使うと、トランスゲージがゼロになるまで空中から「ヤリ」による攻撃をくり返す（攻撃のたびにトランスゲージを消費）。このときは攻撃対象が敵全体になるが、ダメージのばらつきが通常より大きくなる。</li>
+      </ul>
+
+      <h2>クイナ：たべる・調理・青魔法</h2>
+      <ul>
+        <li><strong>たべる</strong>：モンスターを倒した（食べた）うえで青魔法を修得する。対象の残りHPが最大HPの4分の1以下でないと成功しない。修得できる青魔法はモンスターの種類ごとに決まっていて、食べること自体ができないモンスターもいる。トランス中は<strong>調理</strong>に変わり、残りHPが最大HPの2分の1以下のモンスターを食べられる。</li>
+        <li>敵を倒さずにHPを減らす手軽な方法は毒状態にすること。毒のHP減少量は「最大HP÷16」なので、12〜13回減れば「たべる」が成功する状態になる。DISC 4から「たべる」を使いはじめても、記憶の場所へ行く前に「ツイスター」「ブレイズ」以外のすべての青魔法を修得でき、最終的にはすべて修得できる。</li>
+        <li><strong>青魔法</strong>は沈黙状態だと選べない。</li>
+      </ul>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>「たべる」のメッセージ</th><th>意味</th></tr></thead>
+          <tbody>
+            <tr><th>食べられそうにないアルよ！</th><td>食べられないモンスターだった。または、食べる直前に対象が毒のダメージなどで戦闘不能になった</td></tr>
+            <tr><th>もっと弱らせないと食べられないアル！</th><td>対象の残りHPが、食べられる量まで減っていなかった</td></tr>
+            <tr><th>（青魔法の名前）をおぼえた！</th><td>モンスターを食べて新しい青魔法を修得した</td></tr>
+            <tr><th>まずいアルね！</th><td>食べたモンスターから修得できる青魔法が修得ずみだった</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>エーコ：白魔法・W白魔法・召喚</h2>
+      <p>「白魔法」「召喚」は沈黙状態だと選べない。トランス中は「白魔法」が<strong>W白魔法</strong>に変わり、白魔法を2回連続で使う。1回目の行動でトランスゲージがゼロになっても、2回目は実行される。</p>
+
+      <h2>サラマンダー：奥義・絶技・なげる</h2>
+      <ul>
+        <li><strong>絶技</strong>（トランス時）：基本的に「対象が単体から全体になった奥義」だが、「雑魚ちらし」は攻撃のパワーが少し下がる。「グラビデ拳」は絶技になると「グラビガ拳」になる。</li>
+        <li><strong>なげる</strong>：所持している武器を投げて敵単体を攻撃する。とんかちと装備中の武器は投げられず、投げた武器は消える。威力は「投げた武器の2倍の攻撃力を持つ武器」を装備して前列で「たたかう」を行った場合と同じ。「マカロフ投法」装備中、サラマンダーがトランスしているとき、飛行モンスターに攻撃したときはダメージが1.5倍になる（重複可）。</li>
+      </ul>
+      <p>「なげる」に使うなら、ショップで買える武器のうち攻撃力の高いものをまとめ買いしておく。ここほれ！チョコボのポイントでウイングエッジ（攻撃力64）と交換する手もある。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>武器</th><th>攻撃力</th><th>買えるようになる時期</th><th>価格</th></tr></thead>
+          <tbody>
+            <tr><th>ミスリルフォーク</th><td class="num">42</td><td>コンデヤ・パタに到着後</td><td class="num">4,700ギル</td></tr>
+            <tr><th>円月輪</th><td class="num">25</td><td>マダイン・サリでの料理イベント後</td><td class="num">200ギル</td></tr>
+            <tr><th>ライジングサン</th><td class="num">36</td><td>デザートエンプレスでの脱獄後</td><td class="num">500ギル</td></tr>
+            <tr><th>銀のフォーク</th><td class="num">53</td><td>ウイユヴェールに到着後</td><td class="num">7,400ギル</td></tr>
+            <tr><th>タイガーファング</th><td class="num">62</td><td>ヒルダガルデ3号の入手後</td><td class="num">13,500ギル</td></tr>
+            <tr><th>オリハルコン</th><td class="num">71</td><td>ブラン・バルに到着後</td><td class="num">17,000ギル</td></tr>
+            <tr><th>カイザーナックル</th><td class="num">75</td><td>DISC 4の開始後</td><td class="num">18,000ギル</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>ベアトリクス：聖剣技・聖白魔法</h2>
+      <p>「聖剣技」は剣技のうち雷鳴剣・ストックブレイク・クライムハザード・ショックの4種類で、性能はスタイナーの剣技と同じ。「聖白魔法」は白魔法で、性能も白魔法と同じ（沈黙状態だと選べない）。</p>
+
+      <h2>使える白魔法はキャラクターごとに違う</h2>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>白魔法</th><th>ガーネット</th><th>エーコ</th><th>ベアトリクス</th></tr></thead>
+          <tbody>
+            <tr><th>ケアル</th><td>○</td><td>○</td><td>―</td></tr>
+            <tr><th>ケアルラ</th><td>○</td><td>○</td><td>○</td></tr>
+            <tr><th>ケアルガ</th><td>○</td><td>○</td><td>―</td></tr>
+            <tr><th>リジェネ</th><td>―</td><td>○</td><td>―</td></tr>
+            <tr><th>レイズ</th><td>○</td><td>○</td><td>―</td></tr>
+            <tr><th>アレイズ</th><td>―</td><td>○</td><td>○</td></tr>
+            <tr><th>ライブラ</th><td>○</td><td>○</td><td>○</td></tr>
+            <tr><th>ポイゾナ</th><td>○</td><td>―</td><td>―</td></tr>
+            <tr><th>ストナ</th><td>○</td><td>○</td><td>―</td></tr>
+            <tr><th>エスナ</th><td>○</td><td>○</td><td>○</td></tr>
+            <tr><th>シェル</th><td>○</td><td>○</td><td>○</td></tr>
+            <tr><th>プロテス</th><td>○</td><td>○</td><td>○</td></tr>
+            <tr><th>ヘイスト</th><td>―</td><td>○</td><td>―</td></tr>
+            <tr><th>サイレス</th><td>○</td><td>○</td><td>○</td></tr>
+            <tr><th>ミニマム</th><td>○</td><td>○</td><td>○</td></tr>
+            <tr><th>リフレク</th><td>○</td><td>○</td><td>○</td></tr>
+            <tr><th>コンフュ</th><td>○</td><td>―</td><td>―</td></tr>
+            <tr><th>バーサク</th><td>○</td><td>―</td><td>―</td></tr>
+            <tr><th>ブライン</th><td>○</td><td>―</td><td>○</td></tr>
+            <tr><th>レビテト</th><td>○</td><td>―</td><td>―</td></tr>
+            <tr><th>デスペル</th><td>―</td><td>○</td><td>―</td></tr>
+            <tr><th>フェイス</th><td>―</td><td>○</td><td>―</td></tr>
+            <tr><th>ジュエル</th><td>―</td><td>○</td><td>―</td></tr>
+            <tr><th>ホーリー</th><td>―</td><td>○</td><td>○</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="related">
+        <h2>関連ページ</h2>
+        <ul>
+          <li><a href="/ff9/battle/">バトルシステムの基本</a></li>
+          <li><a href="/ff9/abilities/magic/">魔法系アビリティ一覧</a></li>
+          <li><a href="/ff9/abilities/skills/">技系アビリティ一覧</a></li>
+          <li><a href="/ff9/battle/trance/">トランス</a></li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-links">
+        <a href="/ff9/">トップ</a>
+        <a href="/ff9/about/">このWikiについて</a>
+        <a href="/ff9/privacy/">プライバシーポリシー</a>
+        <a href="/ff9/contact/">お問い合わせ</a>
+      </p>
+      <p class="footer-copy">
+        当サイトは非公式のファンサイトです。ゲーム内の画像・名称等の著作権は各権利者に帰属します。<br>
+        &copy; 2026 ファイナルファンタジーIX 攻略Wiki      </p>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top" aria-label="ページ上部へ">▲</a>
+
+  <script src="/ff9/js/main.js?v=a69a038c"></script>
+</body>
+</html>

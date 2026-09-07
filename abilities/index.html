@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アビリティの仕組み - ファイナルファンタジーIX 攻略Wiki</title>
+  <meta name="description" content="FF9のアビリティの基礎知識。装備品からアビリティを引き出してAPで修得する仕組み、アクションアビリティの系統と使えるキャラクター、サポートアビリティと魔石力、召喚のロングとショート、有効なアビリティの組み合わせ。">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://gamers-wiki.github.io/ff9/abilities/">
+
+  <meta property="og:site_name" content="ファイナルファンタジーIX 攻略Wiki">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="アビリティの仕組み - ファイナルファンタジーIX 攻略Wiki">
+  <meta property="og:description" content="FF9のアビリティの基礎知識。装備品からアビリティを引き出してAPで修得する仕組み、アクションアビリティの系統と使えるキャラクター、サポートアビリティと魔石力、召喚のロングとショート、有効なアビリティの組み合わせ。">
+  <meta property="og:url" content="https://gamers-wiki.github.io/ff9/abilities/">
+  <meta property="og:image" content="https://gamers-wiki.github.io/ff9/images/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="アビリティの仕組み - ファイナルファンタジーIX 攻略Wiki">
+  <meta name="twitter:description" content="FF9のアビリティの基礎知識。装備品からアビリティを引き出してAPで修得する仕組み、アクションアビリティの系統と使えるキャラクター、サポートアビリティと魔石力、召喚のロングとショート、有効なアビリティの組み合わせ。">
+  <meta name="twitter:image" content="https://gamers-wiki.github.io/ff9/images/ogp.png">
+
+  <link rel="icon" href="/ff9/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/ff9/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/ff9/apple-touch-icon.png">
+  <meta name="theme-color" content="#171433">
+
+  <link rel="stylesheet" href="/ff9/css/style.css?v=4bada4bf">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://gamers-wiki.github.io/ff9/"},{"@type":"ListItem","position":2,"name":"アビリティ","item":"https://gamers-wiki.github.io/ff9/abilities/"}]}</script>
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/ff9/" class="site-logo">
+        <span class="logo-mark" aria-hidden="true">✦</span>
+        <span class="logo-text">
+          <span class="logo-title">FINAL FANTASY IX</span>
+          <span class="logo-sub">攻略Wiki</span>
+        </span>
+      </a>
+      <form class="site-search" action="/ff9/search/" method="get" role="search">
+        <input type="search" name="q" placeholder="Wiki内を検索（例：ジタン、合成、チョコグラフ）" aria-label="Wiki内検索" maxlength="100">
+        <button type="submit">検索</button>
+      </form>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== グローバルナビ ===== -->
+  <nav class="global-nav" id="global-nav">
+    <ul>
+      <li><a href="/ff9/">トップ</a></li>
+      <li><a href="/ff9/story/">ストーリー攻略</a></li>
+      <li><a href="/ff9/characters/">キャラクター</a></li>
+      <li><a href="/ff9/battle/">バトル</a></li>
+      <li><a href="/ff9/abilities/" class="current">アビリティ</a></li>
+      <li><a href="/ff9/eidolons/">召喚獣</a></li>
+      <li><a href="/ff9/items/">アイテム・装備</a></li>
+      <li><a href="/ff9/monsters/">モンスター</a></li>
+      <li><a href="/ff9/chocobo/">チョコボ</a></li>
+      <li><a href="/ff9/minigames/">ミニゲーム</a></li>
+      <li><a href="/ff9/cards/">クアッドミスト</a></li>
+      <li><a href="/ff9/extra/">やり込み</a></li>
+      <li class="nav-column"><a href="/ff9/column/">解説</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== パンくず ===== -->
+  <div class="breadcrumb">
+    <ol>
+      <li><a href="/ff9/">トップ</a></li>
+      <li>アビリティ</li>
+    </ol>
+  </div>
+
+  <div class="layout layout-2col">
+    <aside class="sidebar sidebar-left">
+      <div class="side-box">
+        <h2 class="side-title">メニュー</h2>
+        <ul class="side-menu">
+          <li><a href="/ff9/story/">ストーリー攻略チャート</a></li>
+          <li><a href="/ff9/characters/">キャラクター</a></li>
+          <li><a href="/ff9/battle/">バトルシステム</a></li>
+          <li><a href="/ff9/abilities/">アビリティ</a></li>
+          <li><a href="/ff9/eidolons/">召喚獣</a></li>
+          <li><a href="/ff9/items/">アイテム・装備</a></li>
+          <li><a href="/ff9/items/synthesis/">合成リスト</a></li>
+          <li><a href="/ff9/monsters/">モンスター図鑑</a></li>
+          <li><a href="/ff9/chocobo/">チョコボ</a></li>
+          <li><a href="/ff9/minigames/">ミニゲーム</a></li>
+          <li><a href="/ff9/cards/">クアッドミスト</a></li>
+          <li><a href="/ff9/extra/">やり込み・サブイベント</a></li>
+          <li><a href="/ff9/extra/missable/">取り返しのつかない要素</a></li>
+          <li><a href="/ff9/column/">世界設定・年表・用語集</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">キャラクター</h2>
+        <ul class="side-menu char-list">
+          <li><a href="/ff9/characters/zidane/">ジタン</a></li>
+          <li><a href="/ff9/characters/vivi/">ビビ</a></li>
+          <li><a href="/ff9/characters/garnet/">ガーネット</a></li>
+          <li><a href="/ff9/characters/steiner/">スタイナー</a></li>
+          <li><a href="/ff9/characters/freya/">フライヤ</a></li>
+          <li><a href="/ff9/characters/quina/">クイナ</a></li>
+          <li><a href="/ff9/characters/eiko/">エーコ</a></li>
+          <li><a href="/ff9/characters/amarant/">サラマンダー</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title side-title-column">解説</h2>
+        <ul class="side-menu column-list">
+          <li><a href="/ff9/column/">記事一覧</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">Wikiについて</h2>
+        <ul class="side-menu">
+          <li><a href="/ff9/about/">このWikiについて</a></li>
+          <li><a href="/ff9/contact/">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </aside>
+    <main class="content">
+
+      <div class="article-header">
+        <h1>アビリティの仕組み</h1>
+        <div class="article-meta"><span>カテゴリ：アビリティ</span></div>
+      </div>
+
+      <p>
+        FF9のアビリティは、装備品に秘められた力として引き出し、バトルでAPをためて自分のものにしていく。
+        このページでは仕組みと種類をまとめ、個々のアビリティのデータは系統ごとのページに載せている。
+      </p>
+      <ul>
+        <li><a href="/ff9/abilities/magic/">魔法系アビリティ一覧</a>（白魔法・黒魔法・青魔法）</li>
+        <li><a href="/ff9/abilities/skills/">技系アビリティ一覧</a>（秘技・裏技・魔法剣・剣技・竜技・奥義・絶技・幻獣）</li>
+        <li><a href="/ff9/eidolons/">召喚獣</a>（召喚の一覧と修得用の宝石）</li>
+        <li><a href="/ff9/abilities/support/">サポートアビリティ一覧</a>（魔石力・効果・キャラクター別の必要AP）</li>
+      </ul>
+
+      <div class="toc" data-auto-toc></div>
+
+      <h2>アビリティを使うには</h2>
+      <p>
+        アイテムを装備すると、そのアイテムに対応するアビリティが使えるようになる。装備を外した瞬間に使えなくなるが、
+        装備したままバトルをくり返してAP（アビリティポイント）をため、アビリティごとに決められた「修得に必要なAP」に達すると修得でき、
+        以後は装備を外しても使える。青魔法だけは例外で、装備では覚えられず、モンスターを「たべる」か「調理」で倒して修得する。
+      </p>
+      <ul>
+        <li>同じアビリティを引き出せるアイテムを2つ装備していると、そのアビリティに加算されるAPが2倍になる（3つなら3倍、4つなら4倍、5つなら5倍）。</li>
+        <li>同じアビリティでも、修得に必要なAPはキャラクターによって異なる。</li>
+        <li>サポートアビリティ「アビリティアップ」を装備していると、バトル後に加算されるAPが2倍になる。</li>
+        <li>通常のバトルでは未修得のアビリティを引き出せる装備を優先し、ボス戦では能力値を優先して装備を選ぶとよい。</li>
+      </ul>
+      <div class="tip">優先して修得したいのは、白魔法の「レイズ」、竜技の「レーゼの風」「ホワイトドロー」、サポートアビリティの「アビリティアップ」「毒味の術」「混乱回避の術」。</div>
+
+      <h2>アクションアビリティ</h2>
+      <p>
+        バトル中やメニュー画面で使える魔法や特殊技で、基本的にMPを消費する。いくつかの系統に分かれ、使えるキャラクターが系統ごとに決まっている。
+      </p>
+      <div class="table-scroll">
+        <table class="wiki-table">
+          <thead><tr><th>系統</th><th>使えるキャラクター</th><th>特徴</th></tr></thead>
+          <tbody>
+            <tr><th>白魔法</th><td>ガーネット、エーコ、ベアトリクス</td><td>HPの回復とステータス異常の付与・解除。メニュー画面で使えるものもある。ベアトリクスでは「聖白魔法」と表示されるが効果は同じ</td></tr>
+            <tr><th>黒魔法</th><td>ビビ</td><td>敵にダメージを与えたり、ステータス異常にしたりする</td></tr>
+            <tr><th>青魔法</th><td>クイナ</td><td>「たべる」または「調理」で修得。敵と同じ攻撃を使える。効果はさまざま</td></tr>
+            <tr><th>召喚</th><td>ガーネット、エーコ</td><td>召喚獣の力を借りる。敵全体にダメージを与えるものが多い</td></tr>
+            <tr><th>幻獣</th><td>ガーネット</td><td>トランス中のみ。一定時間ごとに幻獣の力で敵全体を攻撃する</td></tr>
+            <tr><th>秘技</th><td>ジタン</td><td>補助タイプのアビリティが多い</td></tr>
+            <tr><th>裏技</th><td>ジタン</td><td>トランス中のみ。敵に大ダメージを与える</td></tr>
+            <tr><th>魔法剣</th><td>スタイナー</td><td>パーティーにビビがいるときのみ。ビビが魔法で剣を強化し、スタイナーが攻撃する</td></tr>
+            <tr><th>剣技</th><td>スタイナー、ベアトリクス</td><td>敵にダメージを与えたり、能力値を下げたりする。ベアトリクスでは「聖剣技」と表示されるが効果は同じ</td></tr>
+            <tr><th>竜技</th><td>フライヤ</td><td>敵にダメージを与えるものが多いが、味方のMPを回復するものもある</td></tr>
+            <tr><th>奥義</th><td>サラマンダー</td><td>敵への攻撃や味方の回復。いずれも1体が対象</td></tr>
+            <tr><th>絶技</th><td>サラマンダー</td><td>トランス中のみ。奥義の対象が全体化されたもの</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>召喚のロングとショート</h3>
+      <p>
+        召喚には演出が長く威力の高い「ロング」と、演出が短く威力の低い「ショート」の2バージョンがあり、ショートだと与えるダメージがロングの3分の2になる
+        （カーバンクルはショートだとプロテスの追加効果が発生しない）。はじめてそのアビリティを使ったときは演出はかならずロングになるが、威力は下の確率で決まる。
+      </p>
+      <table class="wiki-table">
+        <thead><tr><th>状況</th><th>ロング</th><th>ショート</th></tr></thead>
+        <tbody>
+          <tr><th>通常</th><td>10%</td><td>90%</td></tr>
+          <tr><th>残りMPが消費MPの2倍以下</th><td>33%</td><td>67%</td></tr>
+          <tr><th>「おうえん」装備時</th><td>100%</td><td>―</td></tr>
+        </tbody>
+      </table>
+
+      <h2>サポートアビリティ</h2>
+      <p>
+        見えない力でバトル中にキャラクターを助けてくれる特殊能力。アイテムを装備したりアビリティを修得しただけでは効果がなく、
+        魔石力を注いで「装備」してはじめて効果を発揮する。魔石力には上限があるので、何を装備するかをよく考える。
+      </p>
+      <ul>
+        <li>不利なステータス異常を防ぐ：「熱せず冷ませず」「混乱回避の術」など。ステータス異常を完全に防ぐにはこれしかないので、早めに修得したい。</li>
+        <li>「たたかう」のダメージを増やす：「バードキラー」「MP消費攻撃」など。</li>
+        <li>コマンドや別のアビリティを強化する：「ハイジャンプ」「目利きの手触り」など。</li>
+        <li>有利なステータス異常を発生させる：「いつでもヘイスト」「おまじない」など。</li>
+        <li>バトルで得られるものを増やす：「レベルアップ」「アビリティアップ」など。</li>
+      </ul>
+      <p>周辺に出るモンスターの攻撃手段に合わせて装備し直すのも有効な戦略。</p>
+
+      <h3>有効な組み合わせ</h3>
+      <ul>
+        <li><strong>いつでもリジェネ＋オートポーション</strong>：ポーションを使っている時間もリジェネで回復し続ける。ボス戦で特に有効。</li>
+        <li><strong>女の子をかばう＋カウンター＋目には目を（＋まどろみの術）</strong>：残りHPが半分以下の女性キャラクターへの単体物理攻撃をジタンが代わりに受け、カウンターで反撃する。「目には目を」で反撃率を上げ、「まどろみの術」で回避率を上げる。女性が3人いるパーティーで最も効果を発揮する。</li>
+        <li><strong>いつでもリフレク＋リフレク倍返し</strong>：全員をいつでもリフレクにし、リフレク倍返しを装備したビビが味方全体に攻撃魔法を使うと、通常の「0.5（全体化）×4（人数）×2（倍返し）＝4倍」のダメージを敵に与えられる。白魔法を使うキャラクターには「リフレク貫通」を装備させておく。</li>
+      </ul>
+
+      <div class="related">
+        <h2>関連ページ</h2>
+        <ul>
+          <li><a href="/ff9/abilities/magic/">魔法系アビリティ一覧</a></li>
+          <li><a href="/ff9/abilities/skills/">技系アビリティ一覧</a></li>
+          <li><a href="/ff9/abilities/support/">サポートアビリティ一覧</a></li>
+          <li><a href="/ff9/eidolons/">召喚獣</a></li>
+          <li><a href="/ff9/characters/">キャラクター</a></li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-links">
+        <a href="/ff9/">トップ</a>
+        <a href="/ff9/about/">このWikiについて</a>
+        <a href="/ff9/privacy/">プライバシーポリシー</a>
+        <a href="/ff9/contact/">お問い合わせ</a>
+      </p>
+      <p class="footer-copy">
+        当サイトは非公式のファンサイトです。ゲーム内の画像・名称等の著作権は各権利者に帰属します。<br>
+        &copy; 2026 ファイナルファンタジーIX 攻略Wiki      </p>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top" aria-label="ページ上部へ">▲</a>
+
+  <script src="/ff9/js/main.js?v=a69a038c"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>トランス・特殊な状況・テクニック集 - ファイナルファンタジーIX 攻略Wiki</title>
+  <meta name="description" content="FF9のトランスの仕組み。トランス中の変化、キャラクターごとの専用コマンドと強化される攻撃、トランスゲージが増える条件と減る量の計算式、強制トランス。ウイユヴェールの魔法封印やイプセンの古城の強弱逆転などの特殊な状況、リレイズ・テント・スロウ・MPゼロ・低レベル進行・強敵対策のテクニック。">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://gamers-wiki.github.io/ff9/battle/trance/">
+
+  <meta property="og:site_name" content="ファイナルファンタジーIX 攻略Wiki">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="トランス・特殊な状況・テクニック集 - ファイナルファンタジーIX 攻略Wiki">
+  <meta property="og:description" content="FF9のトランスの仕組み。トランス中の変化、キャラクターごとの専用コマンドと強化される攻撃、トランスゲージが増える条件と減る量の計算式、強制トランス。ウイユヴェールの魔法封印やイプセンの古城の強弱逆転などの特殊な状況、リレイズ・テント・スロウ・MPゼロ・低レベル進行・強敵対策のテクニック。">
+  <meta property="og:url" content="https://gamers-wiki.github.io/ff9/battle/trance/">
+  <meta property="og:image" content="https://gamers-wiki.github.io/ff9/images/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="トランス・特殊な状況・テクニック集 - ファイナルファンタジーIX 攻略Wiki">
+  <meta name="twitter:description" content="FF9のトランスの仕組み。トランス中の変化、キャラクターごとの専用コマンドと強化される攻撃、トランスゲージが増える条件と減る量の計算式、強制トランス。ウイユヴェールの魔法封印やイプセンの古城の強弱逆転などの特殊な状況、リレイズ・テント・スロウ・MPゼロ・低レベル進行・強敵対策のテクニック。">
+  <meta name="twitter:image" content="https://gamers-wiki.github.io/ff9/images/ogp.png">
+
+  <link rel="icon" href="/ff9/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/ff9/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/ff9/apple-touch-icon.png">
+  <meta name="theme-color" content="#171433">
+
+  <link rel="stylesheet" href="/ff9/css/style.css?v=4bada4bf">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://gamers-wiki.github.io/ff9/"},{"@type":"ListItem","position":2,"name":"バトル","item":"https://gamers-wiki.github.io/ff9/battle/"},{"@type":"ListItem","position":3,"name":"トランス・特殊な状況・テクニック集","item":"https://gamers-wiki.github.io/ff9/battle/trance/"}]}</script>
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/ff9/" class="site-logo">
+        <span class="logo-mark" aria-hidden="true">✦</span>
+        <span class="logo-text">
+          <span class="logo-title">FINAL FANTASY IX</span>
+          <span class="logo-sub">攻略Wiki</span>
+        </span>
+      </a>
+      <form class="site-search" action="/ff9/search/" method="get" role="search">
+        <input type="search" name="q" placeholder="Wiki内を検索（例：ジタン、合成、チョコグラフ）" aria-label="Wiki内検索" maxlength="100">
+        <button type="submit">検索</button>
+      </form>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== グローバルナビ ===== -->
+  <nav class="global-nav" id="global-nav">
+    <ul>
+      <li><a href="/ff9/">トップ</a></li>
+      <li><a href="/ff9/story/">ストーリー攻略</a></li>
+      <li><a href="/ff9/characters/">キャラクター</a></li>
+      <li><a href="/ff9/battle/" class="current">バトル</a></li>
+      <li><a href="/ff9/abilities/">アビリティ</a></li>
+      <li><a href="/ff9/eidolons/">召喚獣</a></li>
+      <li><a href="/ff9/items/">アイテム・装備</a></li>
+      <li><a href="/ff9/monsters/">モンスター</a></li>
+      <li><a href="/ff9/chocobo/">チョコボ</a></li>
+      <li><a href="/ff9/minigames/">ミニゲーム</a></li>
+      <li><a href="/ff9/cards/">クアッドミスト</a></li>
+      <li><a href="/ff9/extra/">やり込み</a></li>
+      <li class="nav-column"><a href="/ff9/column/">解説</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== パンくず ===== -->
+  <div class="breadcrumb">
+    <ol>
+      <li><a href="/ff9/">トップ</a></li>
+      <li><a href="/ff9/battle/">バトル</a></li>
+      <li>トランス・特殊な状況・テクニック集</li>
+    </ol>
+  </div>
+
+  <div class="layout layout-2col">
+    <aside class="sidebar sidebar-left">
+      <div class="side-box">
+        <h2 class="side-title">メニュー</h2>
+        <ul class="side-menu">
+          <li><a href="/ff9/story/">ストーリー攻略チャート</a></li>
+          <li><a href="/ff9/characters/">キャラクター</a></li>
+          <li><a href="/ff9/battle/">バトルシステム</a></li>
+          <li><a href="/ff9/abilities/">アビリティ</a></li>
+          <li><a href="/ff9/eidolons/">召喚獣</a></li>
+          <li><a href="/ff9/items/">アイテム・装備</a></li>
+          <li><a href="/ff9/items/synthesis/">合成リスト</a></li>
+          <li><a href="/ff9/monsters/">モンスター図鑑</a></li>
+          <li><a href="/ff9/chocobo/">チョコボ</a></li>
+          <li><a href="/ff9/minigames/">ミニゲーム</a></li>
+          <li><a href="/ff9/cards/">クアッドミスト</a></li>
+          <li><a href="/ff9/extra/">やり込み・サブイベント</a></li>
+          <li><a href="/ff9/extra/missable/">取り返しのつかない要素</a></li>
+          <li><a href="/ff9/column/">世界設定・年表・用語集</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">キャラクター</h2>
+        <ul class="side-menu char-list">
+          <li><a href="/ff9/characters/zidane/">ジタン</a></li>
+          <li><a href="/ff9/characters/vivi/">ビビ</a></li>
+          <li><a href="/ff9/characters/garnet/">ガーネット</a></li>
+          <li><a href="/ff9/characters/steiner/">スタイナー</a></li>
+          <li><a href="/ff9/characters/freya/">フライヤ</a></li>
+          <li><a href="/ff9/characters/quina/">クイナ</a></li>
+          <li><a href="/ff9/characters/eiko/">エーコ</a></li>
+          <li><a href="/ff9/characters/amarant/">サラマンダー</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title side-title-column">解説</h2>
+        <ul class="side-menu column-list">
+          <li><a href="/ff9/column/">記事一覧</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">Wikiについて</h2>
+        <ul class="side-menu">
+          <li><a href="/ff9/about/">このWikiについて</a></li>
+          <li><a href="/ff9/contact/">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </aside>
+    <main class="content">
+
+      <div class="article-header">
+        <h1>トランス・特殊な状況・テクニック集</h1>
+        <div class="article-meta"><span>カテゴリ：<a href="/ff9/battle/">バトル</a></span></div>
+      </div>
+
+      <div class="toc" data-auto-toc></div>
+
+      <h2>トランス</h2>
+      <p>ATBゲージの下に表示されているトランスゲージが満タンになると、そのキャラクターはトランスする。トランスするとほとんどの不利なステータス異常が解除されるが、トランス中にこれらを防ぐ能力が備わるわけではない。</p>
+      <ul>
+        <li>特定のコマンドがトランス時専用コマンドに変わる。</li>
+        <li>特定の攻撃で与えるダメージが通常の1.5倍になる（ブラッドソード以外の武器を装備しているスタイナーの「たたかう」は3倍）。</li>
+        <li>ゾンビ効果を無効化する。身体が光り、外見も変わる。</li>
+        <li>トランス時に解除されるステータス異常：混乱、バーサク、毒、睡眠、スロウ、ヒート、フリーズ、ミニマム、死の宣告、徐々に石化、沈黙、暗闇、迷惑。</li>
+        <li>シナ・マーカス・ブランク・ベアトリクスにはトランスゲージがない。すべてのキャラクターは魔の森でのプリゾンケージ（1回目）戦までトランスゲージが出現せず、ガーネットはブルーナルシスの入手からヒルダガルデ3号の入手までのあいだトランスゲージが消える。</li>
+      </ul>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact ability-table">
+          <thead><tr><th>キャラクター</th><th>外見のおおまかな変化</th><th>コマンドの変化</th><th>与えるダメージが増す攻撃</th></tr></thead>
+          <tbody>
+            <tr><th>ジタン</th><td class="wrap">獣人化して服がなくなる</td><td>「秘技」→「裏技」</td><td class="wrap">「たたかう」「裏技」</td></tr>
+            <tr><th>ビビ</th><td class="wrap">衣装が変わり、帽子の先が立つ</td><td>「黒魔法」→「W黒魔法」</td><td class="wrap">「たたかう」</td></tr>
+            <tr><th>ガーネット</th><td class="wrap">衣装がレオタードに変わる</td><td>「召喚」→「幻獣」</td><td class="wrap">「たたかう」</td></tr>
+            <tr><th>スタイナー</th><td class="wrap">兜の面あてを装着する</td><td>（変化しない）</td><td class="wrap">「たたかう」「ストックブレイク」「ショック」</td></tr>
+            <tr><th>フライヤ</th><td class="wrap">衣装が変わり、仮面をつける</td><td>（変化しない）</td><td class="wrap">「たたかう」「竜剣」</td></tr>
+            <tr><th>クイナ</th><td class="wrap">顔面が黒くなり、衣装が変わる</td><td>「たべる」→「調理」</td><td class="wrap">「たたかう」</td></tr>
+            <tr><th>エーコ</th><td class="wrap">ツノが伸び、背中の羽が大きくなる</td><td>「白魔法」→「W白魔法」</td><td class="wrap">「たたかう」</td></tr>
+            <tr><th>サラマンダー</th><td class="wrap">筋肉が隆起して服がなくなる</td><td>「奥義」→「絶技」</td><td class="wrap">「たたかう」「なげる」「雑魚ちらし」</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>強制的にトランスするバトル</h3>
+      <p>次のバトルでは、開始時に該当キャラクターが直前のトランスゲージの量に関係なくトランスする。ただしアレクサンドリア（襲撃時）の霧の魔獣とのバトルでは、開始時にスタイナーが戦闘不能だとトランスしない。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>場所</th><th>戦うモンスター</th><th>トランスするキャラクター</th></tr></thead>
+          <tbody>
+            <tr><td>魔の森</td><td>プリゾンケージ（1回目）</td><th>ジタン</th></tr>
+            <tr><td>カーゴシップ</td><td>黒のワルツ3号（1回目）</td><th>ビビ</th></tr>
+            <tr><td>アレクサンドリア（襲撃時）</td><td>霧の魔獣（A）（4連戦の4戦目）</td><th>スタイナー</th></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>トランスゲージが増える条件</h3>
+      <p>敵の攻撃でダメージを受けると増える。量は自分の気力の高さと「満月の心得」の有無で決まり、受けたダメージの大小は影響しない。通常は「0〜自分の気力」の範囲でランダム、「満月の心得」装備時は自分の気力と同じ値。</p>
+      <ul>
+        <li>最大値は全キャラクター共通で255。</li>
+        <li>味方の攻撃でダメージを受けても増えない。毒状態の効果で受けたダメージでも増えない。</li>
+        <li>ストップ・猛毒・ゾンビのいずれかのときは、ダメージを受けても増えない。属性の相性でダメージを吸収したときや、ダメージを受けて残りHPがゼロになったときも増えない。</li>
+        <li>ゾンビ状態になるとゼロにもどされる。</li>
+      </ul>
+      <h3>トランスが終わる条件</h3>
+      <p>トランス中にコマンドを実行するたびにトランスゲージが減り、ゼロになるか、トランス中にバトルが終わると終了する。Lvや気力が高いほど減る量が少なく、トランス中に行動できる回数が増える。</p>
+      <pre><code>1回の行動での減少量 ＝（300 − 自分のLv）÷ 自分の気力 × 10
+※「（300−自分のLv）÷自分の気力」を計算した時点で小数点以下切り捨て
+※「W白魔法」「W黒魔法」は1回の行動あたりの減少量が通常の半分（魔法を2回使うと通常のコマンド実行と同じ量だけ減る）</code></pre>
+
+      <h2>特殊な状況でのバトル</h2>
+      <ul>
+        <li><strong>アレクサンドリア城での演劇バトル</strong>：アレクサンドリア城（タンタラス上演時）では演劇のワンシーンとしてバトルを行う。「ぬすむ」が「まほう」に変わり「ファイダ」「メデオ」「ポーリー」のいずれかを使えるが、芝居の演出用でダメージは与えられない。ジタンは「秘技」が使えない。</li>
+        <li><strong>召喚の消費MPが4倍</strong>：ガーネットはゲーム開始時から「シヴァ」「イフリート」「アトモス」「オーディン」「バハムート」を修得しているが、消費MPが本来の4倍になっていて、Lv20くらいまで育てて最大MPを増やさないかぎり使えない。DISC 2でピナックルロックスを通過すると本来の数値にもどる。</li>
+        <li><strong>ガーネットがコマンドの実行に失敗する</strong>：DISC 3でブルーナルシスを入手してからヒルダガルデ3号を入手するまでのあいだ、ガーネットがバトル中にコマンドを実行すると25%の確率で失敗し、何もしないままATBゲージがゼロにもどる。この時期はトランスゲージも消えている。</li>
+        <li><strong>ウイユヴェールの魔法封印</strong>：ウイユヴェールの建物内部では白魔法・黒魔法・青魔法・召喚・魔法剣が使えない（メニュー画面でも使えない）。味方全員がつねに沈黙状態と考えればよい。建物内部に出るモンスターにも影響し、通常なら「ファイガ」や「ストップ」を使うガルーダは、それ以外の攻撃しか行わなくなる。</li>
+        <li><strong>イプセンの古城の強弱逆転</strong>：イプセンの古城でのバトルで「たたかう」を行う場合、武器の攻撃力が「60−本来の武器の攻撃力」に変わる（ゼロ未満のときはゼロ）。攻撃力の低い武器を装備していたほうが大ダメージを与えられる。そのほかの攻撃には影響しない。</li>
+      </ul>
+
+      <h2>テクニック集</h2>
+      <ul>
+        <li><strong>ヘルプを見る</strong>：装備するときにSELECTボタンでヘルプを表示すると、そのアイテムの性能（属性との相性や追加効果の有無）が分かる。アクションアビリティやサポートアビリティも、ヘルプで簡単な効果が分かる。</li>
+        <li><strong>ギルをかせぐ</strong>：モンスターを倒すと同時に、バトル中にエーテルやフェニックスの羽を盗んで売る（どちらも1個1000ギルで売れる）。エーテルとフェニックスの羽はここほれ！チョコボでも集められる。</li>
+        <li><strong>HPやMPの回復は本人が行う</strong>：コマンドの決定から実行までのあいだに対象が戦闘不能になると、使ったアイテムがムダになる。</li>
+        <li><strong>エリクサーはケチらない</strong>：ショップでは買えないが、特定の場所で拾える、モンスターから盗める、ここほれ！チョコボで掘り出せるなど入手手段は多い。ピンチになったらボス戦以外でも使う。</li>
+        <li><strong>フェニックスの尾（羽）のあとはすぐHP回復</strong>：戦闘不能を解除しても残りHPは最大10までしか回復しない。ふたりのキャラクターが行動可能になるのを待ち、フェニックスの尾→HP回復の順に連続でコマンドを入力する。</li>
+        <li><strong>リレイズで備える</strong>：味方全員をリレイズ状態にしておけば全滅を回避しやすい。とくにHPの回復や戦闘不能の解除ができるキャラクターを優先する。クイナの青魔法「リレイズ」、サラマンダーの奥義（絶技）「オーラ」、サポートアビリティ「おまじない」で発生させられる。</li>
+        <li><strong>テントで敵を弱体化</strong>：バトル中にテントを使うと、対象の残りHPと残りMPが「最大値÷2」ぶん回復するかわりに、50%の確率で沈黙＋暗闇＋毒になる。敵に使えば一度に3種類のステータス異常を起こせる。敵のHPやMPが回復しても支障のない、バトル開始時に使う。一部のモンスターはテント使用時にHPが最大HP以上に回復することがある。</li>
+        <li><strong>ボス戦ではスロウ</strong>：ボスは不利なステータス異常のほとんどを無効化するが、スロウには無防備なことが多い。スロウにしたうえでウインドウの開閉で時間を調整すれば、敵より早いペースで行動できる。</li>
+        <li><strong>敵の残りMPをゼロにする</strong>：MPを消費する攻撃は残りMPがゼロだと使えない。モンスターの最大MPは低めでも100以上（高いと9999）あるので、青魔法「マジックハンマー」を何度か使ったあと、黒魔法「アスピル」や竜技「竜剣」で減らす。MPがゼロでも魔法を使おうとする（何も起きない）モンスターや、ヴァリア・ピラのように残りMPを減らすだけで倒せるモンスターには非常に有効。MPを消費しない攻撃に強力なものがそろっているモンスターには、かえって強力な攻撃ばかり使わせることになる。</li>
+        <li><strong>敵のカウンターにはカウンターで対抗</strong>：カウンターの攻撃に対してカウンターは発動しない（敵のカウンターでダメージを受けても「オートポーション」が発動しないのはそのため）。カウンターを行う敵には、こちらもカウンターをまじえて戦う。「魔法返し」で使った魔法はカウンターの対象になる。リフレクで跳ね返した魔法は再び跳ね返されないが、跳ね返しはカウンターと認められないので、跳ね返した魔法にカウンターで反撃されることがある。</li>
+        <li><strong>跳ね返した魔法の対象はランダム</strong>：味方全員をリフレク状態にしてから全体化した魔法を味方に使うと、4人がそれぞれ単体の魔法を跳ね返す。相手が複数だと対象がランダムでダメージがばらつくが、相手が1体なら4人分を集中でき、ダメージは 0.5（全体化で半減）×4＝2倍になる。「リフレク倍返し」でさらに強化できる。</li>
+        <li><strong>低Lvのままで進める</strong>：EXPを得ないようにバトルを終えるには、逃げる、敵全員をストップ・石化・猛毒のいずれかにする、バトル終了時に味方全員をウイルス・ゾンビ・石化・戦闘不能のいずれかにしておく（最低ひとりはウイルスかゾンビ）。EXPを得ずにAPをかせぐには、序盤は狩猟祭のザグナルから盗めるニードルフォークの追加効果（石化）や黒魔法「ストップ」でモンスターを倒さずに終える。DISC 3の終盤に行けるダゲレオでサルガタナスを手に入れ、装備して「刀魂放気」を使えば、石化を無効化するモンスター以外を確実に石化できる。</li>
+      </ul>
+      <h3>強敵との戦いに勝つために</h3>
+      <p>ボスに負けたからといってすぐLvを上げるのは早計。何度か戦って敵の能力（とくに攻撃の属性や追加効果）を調べ、次の順で対策を立てる。</p>
+      <ol>
+        <li><strong>属性との相性を見直す</strong>：敵の攻撃に属性があるなら、それを半減・無効・吸収できるアイテムを装備する。防御力を上げる防具を装備するより簡単にダメージを減らせる。</li>
+        <li><strong>サポートアビリティ（防御）</strong>：安全性を第一に、敵の攻撃で発生するステータス異常をできるかぎり無効化する。敵の攻撃に合わせて「いつでもリフレク」「いつでもレビテト」「まどろみの術」などを装備し、それでも耐えられないなら「HP10%アップ」「HP20%アップ」も装備する（同時に装備すると最大HPは 110%×120%＝132%、小数点以下切り捨て。MPも同様）。</li>
+        <li><strong>サポートアビリティ（回復）</strong>：「薬剤師の免許」「精神統一」「反射区熟知」で回復量を増やせるが、それ以上に有効なのが「いつでもリジェネ」＋「オートポーション」。HP回復のためにコマンドを入力する回数を大幅に減らせる。開始直後の攻撃で戦闘不能になりやすいバトルでは、事前に「おまじない」を装備しておく。</li>
+        <li><strong>サポートアビリティ（攻撃）</strong>：残った魔石力で「○○キラー」「MP消費攻撃」を装備し、「カウンター」か「魔法返し」で攻撃の機会を増やす。モンスターの種類や武器によっては「追加効果発動」も。</li>
+        <li><strong>能力値を見直す</strong>：おもに無属性の攻撃を使う敵には、物理（魔法）防御力の高いアイテムで対処する。割合ダメージや残りHPを1にする攻撃、ステータス異常を発生させるだけの攻撃は、装備を変えたりシェル状態になったりして、受ける魔法がミスになる確率を上げる。</li>
+        <li><strong>パーティーメンバーを見直す</strong>：敵に有効な装備品（とアビリティ）を使えるキャラクターを主体に組む。「アレイズ」や「カーバンクル」などピンチ脱出に役立つアビリティを使えるエーコは強敵戦に欠かせない。エーコがパーティーにいれば、全滅しても「転生の炎」が自動で発動することがあるので、最後まであきらめない。</li>
+        <li><strong>Lvを見直す</strong>：それでも勝ち目がないならLvを上げて出直す。そのときは「レベル5デス」などで全滅しないように各キャラクターのLvを調整しておく。</li>
+      </ol>
+
+      <div class="related">
+        <h2>関連ページ</h2>
+        <ul>
+          <li><a href="/ff9/battle/">バトルシステムの基本</a></li>
+          <li><a href="/ff9/battle/status/">ステータス異常</a></li>
+          <li><a href="/ff9/monsters/bosses/">ボス一覧</a></li>
+          <li><a href="/ff9/minigames/spirits/">オズマの攻略</a></li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-links">
+        <a href="/ff9/">トップ</a>
+        <a href="/ff9/about/">このWikiについて</a>
+        <a href="/ff9/privacy/">プライバシーポリシー</a>
+        <a href="/ff9/contact/">お問い合わせ</a>
+      </p>
+      <p class="footer-copy">
+        当サイトは非公式のファンサイトです。ゲーム内の画像・名称等の著作権は各権利者に帰属します。<br>
+        &copy; 2026 ファイナルファンタジーIX 攻略Wiki      </p>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top" aria-label="ページ上部へ">▲</a>
+
+  <script src="/ff9/js/main.js?v=a69a038c"></script>
+</body>
+</html>

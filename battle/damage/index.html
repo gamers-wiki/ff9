@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ダメージと属性 - ファイナルファンタジーIX 攻略Wiki</title>
+  <meta name="description" content="FF9のダメージの仕組み。物理攻撃と魔法攻撃の違い、ダメージが増える状況（サポートアビリティ・トランス・背後攻撃・睡眠・属性強化・弱点・クリティカル）と減る状況、防御力を無視する攻撃、全体化の半減、8つの属性と半減・無効・吸収・弱点の相性、「呪い」による弱点の追加。">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://gamers-wiki.github.io/ff9/battle/damage/">
+
+  <meta property="og:site_name" content="ファイナルファンタジーIX 攻略Wiki">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ダメージと属性 - ファイナルファンタジーIX 攻略Wiki">
+  <meta property="og:description" content="FF9のダメージの仕組み。物理攻撃と魔法攻撃の違い、ダメージが増える状況（サポートアビリティ・トランス・背後攻撃・睡眠・属性強化・弱点・クリティカル）と減る状況、防御力を無視する攻撃、全体化の半減、8つの属性と半減・無効・吸収・弱点の相性、「呪い」による弱点の追加。">
+  <meta property="og:url" content="https://gamers-wiki.github.io/ff9/battle/damage/">
+  <meta property="og:image" content="https://gamers-wiki.github.io/ff9/images/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ダメージと属性 - ファイナルファンタジーIX 攻略Wiki">
+  <meta name="twitter:description" content="FF9のダメージの仕組み。物理攻撃と魔法攻撃の違い、ダメージが増える状況（サポートアビリティ・トランス・背後攻撃・睡眠・属性強化・弱点・クリティカル）と減る状況、防御力を無視する攻撃、全体化の半減、8つの属性と半減・無効・吸収・弱点の相性、「呪い」による弱点の追加。">
+  <meta name="twitter:image" content="https://gamers-wiki.github.io/ff9/images/ogp.png">
+
+  <link rel="icon" href="/ff9/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/ff9/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/ff9/apple-touch-icon.png">
+  <meta name="theme-color" content="#171433">
+
+  <link rel="stylesheet" href="/ff9/css/style.css?v=4bada4bf">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://gamers-wiki.github.io/ff9/"},{"@type":"ListItem","position":2,"name":"バトル","item":"https://gamers-wiki.github.io/ff9/battle/"},{"@type":"ListItem","position":3,"name":"ダメージと属性","item":"https://gamers-wiki.github.io/ff9/battle/damage/"}]}</script>
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/ff9/" class="site-logo">
+        <span class="logo-mark" aria-hidden="true">✦</span>
+        <span class="logo-text">
+          <span class="logo-title">FINAL FANTASY IX</span>
+          <span class="logo-sub">攻略Wiki</span>
+        </span>
+      </a>
+      <form class="site-search" action="/ff9/search/" method="get" role="search">
+        <input type="search" name="q" placeholder="Wiki内を検索（例：ジタン、合成、チョコグラフ）" aria-label="Wiki内検索" maxlength="100">
+        <button type="submit">検索</button>
+      </form>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== グローバルナビ ===== -->
+  <nav class="global-nav" id="global-nav">
+    <ul>
+      <li><a href="/ff9/">トップ</a></li>
+      <li><a href="/ff9/story/">ストーリー攻略</a></li>
+      <li><a href="/ff9/characters/">キャラクター</a></li>
+      <li><a href="/ff9/battle/" class="current">バトル</a></li>
+      <li><a href="/ff9/abilities/">アビリティ</a></li>
+      <li><a href="/ff9/eidolons/">召喚獣</a></li>
+      <li><a href="/ff9/items/">アイテム・装備</a></li>
+      <li><a href="/ff9/monsters/">モンスター</a></li>
+      <li><a href="/ff9/chocobo/">チョコボ</a></li>
+      <li><a href="/ff9/minigames/">ミニゲーム</a></li>
+      <li><a href="/ff9/cards/">クアッドミスト</a></li>
+      <li><a href="/ff9/extra/">やり込み</a></li>
+      <li class="nav-column"><a href="/ff9/column/">解説</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== パンくず ===== -->
+  <div class="breadcrumb">
+    <ol>
+      <li><a href="/ff9/">トップ</a></li>
+      <li><a href="/ff9/battle/">バトル</a></li>
+      <li>ダメージと属性</li>
+    </ol>
+  </div>
+
+  <div class="layout layout-2col">
+    <aside class="sidebar sidebar-left">
+      <div class="side-box">
+        <h2 class="side-title">メニュー</h2>
+        <ul class="side-menu">
+          <li><a href="/ff9/story/">ストーリー攻略チャート</a></li>
+          <li><a href="/ff9/characters/">キャラクター</a></li>
+          <li><a href="/ff9/battle/">バトルシステム</a></li>
+          <li><a href="/ff9/abilities/">アビリティ</a></li>
+          <li><a href="/ff9/eidolons/">召喚獣</a></li>
+          <li><a href="/ff9/items/">アイテム・装備</a></li>
+          <li><a href="/ff9/items/synthesis/">合成リスト</a></li>
+          <li><a href="/ff9/monsters/">モンスター図鑑</a></li>
+          <li><a href="/ff9/chocobo/">チョコボ</a></li>
+          <li><a href="/ff9/minigames/">ミニゲーム</a></li>
+          <li><a href="/ff9/cards/">クアッドミスト</a></li>
+          <li><a href="/ff9/extra/">やり込み・サブイベント</a></li>
+          <li><a href="/ff9/extra/missable/">取り返しのつかない要素</a></li>
+          <li><a href="/ff9/column/">世界設定・年表・用語集</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">キャラクター</h2>
+        <ul class="side-menu char-list">
+          <li><a href="/ff9/characters/zidane/">ジタン</a></li>
+          <li><a href="/ff9/characters/vivi/">ビビ</a></li>
+          <li><a href="/ff9/characters/garnet/">ガーネット</a></li>
+          <li><a href="/ff9/characters/steiner/">スタイナー</a></li>
+          <li><a href="/ff9/characters/freya/">フライヤ</a></li>
+          <li><a href="/ff9/characters/quina/">クイナ</a></li>
+          <li><a href="/ff9/characters/eiko/">エーコ</a></li>
+          <li><a href="/ff9/characters/amarant/">サラマンダー</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title side-title-column">解説</h2>
+        <ul class="side-menu column-list">
+          <li><a href="/ff9/column/">記事一覧</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">Wikiについて</h2>
+        <ul class="side-menu">
+          <li><a href="/ff9/about/">このWikiについて</a></li>
+          <li><a href="/ff9/contact/">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </aside>
+    <main class="content">
+
+      <div class="article-header">
+        <h1>ダメージと属性</h1>
+        <div class="article-meta"><span>カテゴリ：<a href="/ff9/battle/">バトル</a></span></div>
+      </div>
+
+      <div class="toc" data-auto-toc></div>
+
+      <h2>物理攻撃と魔法攻撃</h2>
+      <p>攻撃には「物理攻撃」と「魔法攻撃」に分類されるものがある。物理攻撃は対象の物理防御力や物理回避率が、魔法攻撃は魔法防御力や魔法回避率がダメージ量や命中率に影響する（例外もある）。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact ability-table">
+          <thead><tr><th></th><th>物理攻撃</th><th>魔法攻撃</th></tr></thead>
+          <tbody>
+            <tr><th>ダメージ量や命中率に影響を与える能力値</th><td class="wrap">対象の物理防御力や物理回避率</td><td class="wrap">対象の魔法防御力や魔法回避率</td></tr>
+            <tr><th>実行者がミニマム状態のときの影響</th><td class="wrap">ダメージ量が通常時より激減</td><td class="wrap">ダメージ量が通常時より半減</td></tr>
+            <tr><th>対象がミニマム状態のときの影響</th><td class="wrap">ダメージ量が通常時の1.5倍</td><td class="wrap">影響なし</td></tr>
+            <tr><th>対象がシェル・プロテス状態のときの影響</th><td class="wrap">対象がプロテス状態だとダメージ量が半減</td><td class="wrap">対象がシェル状態だとダメージ量または命中率が半減</td></tr>
+            <tr><th>対象に発生しているステータス異常との関連</th><td class="wrap">睡眠状態を解除したり、フリーズ状態の対象を戦闘不能状態にできる攻撃が多い</td><td class="wrap">バニシュ状態を解除できる攻撃が多い</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>ダメージ量が増える状況</h2>
+      <p>
+        大ダメージを与えるには、攻撃の威力に影響する能力値（おもに力や魔力）を上げるのが基本。加えて、下の状況を作り出せばダメージをさらに増やせる。ただしモンスターの攻撃で受けるダメージも同じ条件で増える。1回の攻撃でHPやMPが増減する量は9999が上限。
+        「状況」はダメージが増えるかどうかの判定が行われる順に並べている。
+      </p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact ability-table">
+          <thead><tr><th>状況</th><th>倍率</th><th>たたかう</th><th>なげる・裏技・ストックブレイク・ショック・竜剣・雑魚ちらし</th><th>ヤリ</th><th>魔法（黒・白・青）・召喚・幻獣・魔法剣・暗黒剣・雷鳴剣</th><th>モンスターの物理攻撃</th><th>モンスターの魔法攻撃</th></tr></thead>
+          <tbody>
+            <tr><td class="wrap">攻撃側が、対象の種族に有効なサポートアビリティを装備していた</td><td>1.5倍</td><td class="wrap">○</td><td class="wrap">×（「なげる」で飛行モンスターを攻撃した場合は1.5倍）</td><td class="wrap">×</td><td class="wrap">×</td><td class="wrap">―</td><td class="wrap">―</td></tr>
+            <tr><td class="wrap">攻撃側がサポートアビリティ「MP消費攻撃」を装備していた</td><td>1.5倍</td><td class="wrap">○</td><td class="wrap">×</td><td class="wrap">×</td><td class="wrap">×</td><td class="wrap">―</td><td class="wrap">―</td></tr>
+            <tr><td class="wrap">攻撃側がトランス中かバーサク状態（またはその両方）だった</td><td>1.5倍</td><td class="wrap">○（スタイナーのみトランス中は3.0倍。ブラッドソード装備時は1.5倍）</td><td class="wrap">○</td><td class="wrap">×</td><td class="wrap">×</td><td class="wrap">○</td><td class="wrap">×</td></tr>
+            <tr><td class="wrap">背後攻撃を行った</td><td>1.5倍</td><td class="wrap">○</td><td class="wrap">×</td><td class="wrap">×</td><td class="wrap">×</td><td class="wrap">○</td><td class="wrap">×</td></tr>
+            <tr><td class="wrap">対象が睡眠かミニマム状態（またはその両方）だった</td><td>1.5倍</td><td class="wrap">○</td><td class="wrap">○</td><td class="wrap">○</td><td class="wrap">×</td><td class="wrap">○</td><td class="wrap">×</td></tr>
+            <tr><td class="wrap">攻撃側が、攻撃の持つ属性を強化する能力を持っていた</td><td>1.5倍</td><td class="wrap">○</td><td class="wrap">―</td><td class="wrap">―</td><td class="wrap">○</td><td class="wrap">―</td><td class="wrap">○</td></tr>
+            <tr><td class="wrap">攻撃の持つ属性と対象の弱点が同じだった</td><td>1.5倍</td><td class="wrap">○</td><td class="wrap">―</td><td class="wrap">―</td><td class="wrap">○</td><td class="wrap">―</td><td class="wrap">○</td></tr>
+            <tr><td class="wrap">クリティカルヒットが発生した</td><td>2.0倍</td><td class="wrap">○</td><td class="wrap">―</td><td class="wrap">―</td><td class="wrap">―</td><td class="wrap">―</td><td class="wrap">―</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li><strong>背後攻撃</strong>：背を向けた相手への攻撃で、命中すれば通常よりダメージが増える（自分や味方への攻撃も背後攻撃と見なされる）。モンスターがこちらに背を向けるのは先制攻撃が発生したときと秘技「あれはなんだ」を使ったとき。こちらが背を向けるのはバックアタックの発生時と、L1＋R1で逃げようとしているあいだ。「あれはなんだ」は敵の向きを変えて隊形を開始時の状態にもどすだけで、ATBゲージの量は変えない。敵が行動した直後（カウンターをのぞく）に使うと、向き直られる前に攻撃できる。</li>
+        <li><strong>クリティカルヒット</strong>：「たたかう」やモンスターの特定の攻撃は「攻撃側の気力÷4（%）」の確率でクリティカルヒットし、ダメージが2倍になる。</li>
+        <li><strong>倍率は重複する</strong>：「バードキラー」と「MP消費攻撃」を装備して飛行モンスターに「たたかう」を行えば 1.5×1.5＝2.25倍。スタイナーが敵の弱点属性の武器・その属性を強化するアイテム・敵の種族に有効なサポートアビリティ・「MP消費攻撃」を装備し、背を向けた睡眠状態の敵にトランス中に「たたかう」でクリティカルヒットを出せば 1.5×1.5×3.0×1.5×1.5×1.5×1.5×2.0＝68.34375倍になる（計算のたびに小数点以下が切り捨てられるので実際はこれより少ない）。能力値が初期状態でも9999のダメージを与えられる。</li>
+      </ul>
+
+      <h2>ダメージ量が減る状況</h2>
+      <p>モンスターの攻撃で受けるダメージを減らすときに役立つ。「状況」は判定が行われる順。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact ability-table">
+          <thead><tr><th>状況</th><th>倍率</th><th>たたかう</th><th>ヤリ・なげる・裏技・ストックブレイク・ショック・竜剣・雑魚ちらし</th><th>クライムハザード・桜華狂咲</th><th>魔法（黒・白・青）・召喚・幻獣</th><th>モンスターの物理攻撃</th><th>モンスターの魔法攻撃</th></tr></thead>
+          <tbody>
+            <tr><td class="wrap">対象がシェル状態だった</td><td>0.5倍</td><td class="wrap">×</td><td class="wrap">×</td><td class="wrap">○</td><td class="wrap">○</td><td class="wrap">×</td><td class="wrap">○</td></tr>
+            <tr><td class="wrap">対象がプロテス状態か「ぼうぎょ」実行中（またはその両方）だった</td><td>0.5倍</td><td class="wrap">○</td><td class="wrap">○</td><td class="wrap">×</td><td class="wrap">×</td><td class="wrap">○</td><td class="wrap">×</td></tr>
+            <tr><td class="wrap">攻撃を全体化させた</td><td>0.5倍</td><td class="wrap">―</td><td class="wrap">―</td><td class="wrap">―</td><td class="wrap">○</td><td class="wrap">―</td><td class="wrap">○</td></tr>
+            <tr><td class="wrap">攻撃側がミニマム状態だった</td><td>0.5倍</td><td class="wrap">○（0.5倍よりも大幅に下がる）</td><td class="wrap">○（0.5倍よりも大幅に下がる）</td><td class="wrap">○</td><td class="wrap">○</td><td class="wrap">○（0.5倍よりも大幅に下がる）</td><td class="wrap">○</td></tr>
+            <tr><td class="wrap">後列から（または後列に）攻撃した</td><td>0.5倍</td><td class="wrap">○（ラケット装備時や「忍者の教え」装備時は1倍）</td><td class="wrap">×</td><td class="wrap">×</td><td class="wrap">×</td><td class="wrap">○</td><td class="wrap">×</td></tr>
+            <tr><td class="wrap">対象に、攻撃が持つ属性を半減する能力があった</td><td>0.5倍</td><td class="wrap">○</td><td class="wrap">―</td><td class="wrap">―</td><td class="wrap">○</td><td class="wrap">―</td><td class="wrap">○</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li>通常の攻撃は対象の防御力が高くてもわずかにダメージを与えられるが、黒魔法「ドレイン」「アスピル」と竜技「竜剣」は例外で、アビリティのパワー以上の防御力を持つ相手にはHPやMPを減らす量がゼロになる。</li>
+        <li><strong>全体化</strong>：白魔法と黒魔法の一部は、対象を選ぶときにL1かR1で単体から全体に変えられる（もう一度押すと単体にもどる）。ダメージを与えたりHPを回復する魔法は、ダメージ量や回復量が半分になる。「サイレス」「ポイズン」などステータス異常を発生させるだけの魔法と「グラビデ」は命中率が半分になる。対象が1体しかいないときに全体化しても同じ。</li>
+      </ul>
+
+      <h2>防御力に影響されない攻撃</h2>
+      <ul>
+        <li><strong>固定ダメージ</strong>：9999や1000など毎回決まった量のダメージを与える攻撃。秘技「盗賊のあかし」（ジタンの素早さ×盗みに成功した回数÷2）のように独自の計算式で決まるものや、秘技「リーチセブン」や青魔法「リミットグローヴ」のように使用者の残りHPで決まるものもある。条件がそろえば確実に9999を与えられるものがある。</li>
+        <li><strong>割合ダメージ</strong>：「対象の最大HP（または残りHP）の○%」で決まる攻撃。最大HP（残りHP）が高いほどダメージも大きいが、通常の攻撃よりミスになりやすい。</li>
+        <li><strong>特定の魔法</strong>：黒魔法「コメット」「メテオ」と青魔法「ツイスター」。ダメージのばらつきは大きいが、対象の防御力を無視する。</li>
+        <li><strong>残りHPを1ケタにする攻撃</strong>：残りHPを1〜9のいずれかにする。ゼロにはならず、残りHPが1〜8の対象に使うと回復させてしまうことがある。</li>
+        <li><strong>残りHPを1にする攻撃</strong>：強制的に1にする。該当する攻撃の大半は一定確率でミスになる。</li>
+        <li><strong>差額のダメージ</strong>：最大HPと残りHPの差がそのままダメージになる攻撃。剣技「サガク剣」や青魔法「パンプキンヘッド」など基本的には実行者のHPをもとに決まるが、竜技「ドラゴンブレス」だけは対象のHPが基準。</li>
+      </ul>
+
+      <h2>属性</h2>
+      <p>攻撃には火や冷などの属性を持つものがある。装備品やモンスターには「属性に対する相性」が設定されていて、属性を持つ攻撃のダメージ量に大きく影響する。属性がない場合は「無属性」。各アビリティの属性はコマンドを選ぶときのヘルプで確認できる。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>属性</th><th>おもな特徴</th></tr></thead>
+          <tbody>
+            <tr><th>火</th><td>アンデッドモンスターなどに有効</td></tr>
+            <tr><th>冷</th><td>ドラゴン族モンスターなどに有効</td></tr>
+            <tr><th>雷</th><td>水辺にいるモンスターなどに有効</td></tr>
+            <tr><th>土</th><td>飛行モンスターには無効化されてしまう</td></tr>
+            <tr><th>水</th><td>地中に棲むモンスターには効果が薄い</td></tr>
+            <tr><th>風</th><td>飛行モンスターに有効</td></tr>
+            <tr><th>聖</th><td>アンデッドおよび魔族モンスターに有効</td></tr>
+            <tr><th>闇</th><td>弱点とするモンスターはごくわずか</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>属性に対する相性</h3>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>相性</th><th>該当する属性の攻撃に与える影響</th></tr></thead>
+          <tbody>
+            <tr><th>半減</th><td>受けるダメージを半分に減らす</td></tr>
+            <tr><th>無効</th><td>攻撃を打ち消す（「Guard」と表示される）</td></tr>
+            <tr><th>吸収</th><td>受けるはずのダメージ量ぶんHPを回復させる</td></tr>
+            <tr><th>弱点</th><td>受けるダメージが1.5倍に増える</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li>吸収は、ダメージを受けないうえに、受けるはずだったダメージ量ぶん（物理防御力や魔法防御力をゼロとして計算）HPが回復する。</li>
+        <li>同じ種類の相性は重複しない（同じ属性の半減能力を装備品で複数得ても、受けるダメージは半分止まり）。異なる相性の重複はあり、半減＋弱点なら 0.5×1.5＝0.75倍になる。無効は攻撃そのものを打ち消すので、無効＋吸収のときは吸収の効果が出ない（無効＋半減、無効＋弱点も同様）。</li>
+        <li>受けた攻撃に追加効果がある場合、無効なら追加効果も無効化するが、吸収では通常どおりの確率で追加効果が発生する。闇属性を吸収できる状態で霧の魔獣の「霧」を受けると、HPは回復しても睡眠状態になる。敵の攻撃によっては、吸収より無効のほうが役立つ。</li>
+        <li>奥義（絶技）「呪い」を使うと、対象のモンスターはランダムに選ばれた属性との相性が弱点に変わる（もともと半減・無効・吸収でも打ち消されて弱点になる）。何度も使えば弱点の属性を増やせる。ただし「土属性の攻撃は飛行モンスターに無効」という法則だけは変えられない。</li>
+      </ul>
+      <h3>武器の属性と属性の強化</h3>
+      <ul>
+        <li>攻撃属性を持つ武器を装備すると、「たたかう」の攻撃に武器の属性が付く。剣技「ストックブレイク」「ショック」と奥義（絶技）「雑魚ちらし」も同じ。</li>
+        <li>属性強化の能力を持つアイテム（ヘルプでは「○属性の攻撃がパワーアップします」）を装備していると、該当する属性を持つ攻撃で与えるダメージがすべて1.5倍になる。同じ属性を強化するアイテムを複数装備しても、それ以上は増えない。</li>
+      </ul>
+
+      <div class="related">
+        <h2>関連ページ</h2>
+        <ul>
+          <li><a href="/ff9/battle/status/">ステータス異常</a></li>
+          <li><a href="/ff9/items/">アイテム・装備の目的別リスト（属性別）</a></li>
+          <li><a href="/ff9/monsters/">モンスター図鑑（種族と属性）</a></li>
+          <li><a href="/ff9/abilities/support/">サポートアビリティ一覧</a></li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-links">
+        <a href="/ff9/">トップ</a>
+        <a href="/ff9/about/">このWikiについて</a>
+        <a href="/ff9/privacy/">プライバシーポリシー</a>
+        <a href="/ff9/contact/">お問い合わせ</a>
+      </p>
+      <p class="footer-copy">
+        当サイトは非公式のファンサイトです。ゲーム内の画像・名称等の著作権は各権利者に帰属します。<br>
+        &copy; 2026 ファイナルファンタジーIX 攻略Wiki      </p>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top" aria-label="ページ上部へ">▲</a>
+
+  <script src="/ff9/js/main.js?v=a69a038c"></script>
+</body>
+</html>

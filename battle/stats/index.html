@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>能力値・Lv・成長 - ファイナルファンタジーIX 攻略Wiki</title>
+  <meta name="description" content="FF9の能力値の役割、レベルアップに必要なEXP表、EXPの頭割り、仲間加入時のLv、最大HP・MPの計算式とベース値表、魔石力・素早さ・力・魔力・気力の成長ボーナスとLv修正値、マーカスの成長ボーナスをエーコに引き継ぐ方法、能力値の上限と育成手順。">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://gamers-wiki.github.io/ff9/battle/stats/">
+
+  <meta property="og:site_name" content="ファイナルファンタジーIX 攻略Wiki">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="能力値・Lv・成長 - ファイナルファンタジーIX 攻略Wiki">
+  <meta property="og:description" content="FF9の能力値の役割、レベルアップに必要なEXP表、EXPの頭割り、仲間加入時のLv、最大HP・MPの計算式とベース値表、魔石力・素早さ・力・魔力・気力の成長ボーナスとLv修正値、マーカスの成長ボーナスをエーコに引き継ぐ方法、能力値の上限と育成手順。">
+  <meta property="og:url" content="https://gamers-wiki.github.io/ff9/battle/stats/">
+  <meta property="og:image" content="https://gamers-wiki.github.io/ff9/images/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="能力値・Lv・成長 - ファイナルファンタジーIX 攻略Wiki">
+  <meta name="twitter:description" content="FF9の能力値の役割、レベルアップに必要なEXP表、EXPの頭割り、仲間加入時のLv、最大HP・MPの計算式とベース値表、魔石力・素早さ・力・魔力・気力の成長ボーナスとLv修正値、マーカスの成長ボーナスをエーコに引き継ぐ方法、能力値の上限と育成手順。">
+  <meta name="twitter:image" content="https://gamers-wiki.github.io/ff9/images/ogp.png">
+
+  <link rel="icon" href="/ff9/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/ff9/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/ff9/apple-touch-icon.png">
+  <meta name="theme-color" content="#171433">
+
+  <link rel="stylesheet" href="/ff9/css/style.css?v=4bada4bf">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://gamers-wiki.github.io/ff9/"},{"@type":"ListItem","position":2,"name":"バトル","item":"https://gamers-wiki.github.io/ff9/battle/"},{"@type":"ListItem","position":3,"name":"能力値・Lv・成長","item":"https://gamers-wiki.github.io/ff9/battle/stats/"}]}</script>
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/ff9/" class="site-logo">
+        <span class="logo-mark" aria-hidden="true">✦</span>
+        <span class="logo-text">
+          <span class="logo-title">FINAL FANTASY IX</span>
+          <span class="logo-sub">攻略Wiki</span>
+        </span>
+      </a>
+      <form class="site-search" action="/ff9/search/" method="get" role="search">
+        <input type="search" name="q" placeholder="Wiki内を検索（例：ジタン、合成、チョコグラフ）" aria-label="Wiki内検索" maxlength="100">
+        <button type="submit">検索</button>
+      </form>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== グローバルナビ ===== -->
+  <nav class="global-nav" id="global-nav">
+    <ul>
+      <li><a href="/ff9/">トップ</a></li>
+      <li><a href="/ff9/story/">ストーリー攻略</a></li>
+      <li><a href="/ff9/characters/">キャラクター</a></li>
+      <li><a href="/ff9/battle/" class="current">バトル</a></li>
+      <li><a href="/ff9/abilities/">アビリティ</a></li>
+      <li><a href="/ff9/eidolons/">召喚獣</a></li>
+      <li><a href="/ff9/items/">アイテム・装備</a></li>
+      <li><a href="/ff9/monsters/">モンスター</a></li>
+      <li><a href="/ff9/chocobo/">チョコボ</a></li>
+      <li><a href="/ff9/minigames/">ミニゲーム</a></li>
+      <li><a href="/ff9/cards/">クアッドミスト</a></li>
+      <li><a href="/ff9/extra/">やり込み</a></li>
+      <li class="nav-column"><a href="/ff9/column/">解説</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== パンくず ===== -->
+  <div class="breadcrumb">
+    <ol>
+      <li><a href="/ff9/">トップ</a></li>
+      <li><a href="/ff9/battle/">バトル</a></li>
+      <li>能力値・Lv・成長</li>
+    </ol>
+  </div>
+
+  <div class="layout layout-2col">
+    <aside class="sidebar sidebar-left">
+      <div class="side-box">
+        <h2 class="side-title">メニュー</h2>
+        <ul class="side-menu">
+          <li><a href="/ff9/story/">ストーリー攻略チャート</a></li>
+          <li><a href="/ff9/characters/">キャラクター</a></li>
+          <li><a href="/ff9/battle/">バトルシステム</a></li>
+          <li><a href="/ff9/abilities/">アビリティ</a></li>
+          <li><a href="/ff9/eidolons/">召喚獣</a></li>
+          <li><a href="/ff9/items/">アイテム・装備</a></li>
+          <li><a href="/ff9/items/synthesis/">合成リスト</a></li>
+          <li><a href="/ff9/monsters/">モンスター図鑑</a></li>
+          <li><a href="/ff9/chocobo/">チョコボ</a></li>
+          <li><a href="/ff9/minigames/">ミニゲーム</a></li>
+          <li><a href="/ff9/cards/">クアッドミスト</a></li>
+          <li><a href="/ff9/extra/">やり込み・サブイベント</a></li>
+          <li><a href="/ff9/extra/missable/">取り返しのつかない要素</a></li>
+          <li><a href="/ff9/column/">世界設定・年表・用語集</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">キャラクター</h2>
+        <ul class="side-menu char-list">
+          <li><a href="/ff9/characters/zidane/">ジタン</a></li>
+          <li><a href="/ff9/characters/vivi/">ビビ</a></li>
+          <li><a href="/ff9/characters/garnet/">ガーネット</a></li>
+          <li><a href="/ff9/characters/steiner/">スタイナー</a></li>
+          <li><a href="/ff9/characters/freya/">フライヤ</a></li>
+          <li><a href="/ff9/characters/quina/">クイナ</a></li>
+          <li><a href="/ff9/characters/eiko/">エーコ</a></li>
+          <li><a href="/ff9/characters/amarant/">サラマンダー</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title side-title-column">解説</h2>
+        <ul class="side-menu column-list">
+          <li><a href="/ff9/column/">記事一覧</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">Wikiについて</h2>
+        <ul class="side-menu">
+          <li><a href="/ff9/about/">このWikiについて</a></li>
+          <li><a href="/ff9/contact/">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </aside>
+    <main class="content">
+
+      <div class="article-header">
+        <h1>能力値・Lv・成長</h1>
+        <div class="article-meta"><span>カテゴリ：<a href="/ff9/battle/">バトル</a></span></div>
+      </div>
+
+      <div class="toc" data-auto-toc></div>
+
+      <h2>能力値の役割</h2>
+      <p>キャラクターには7種類の能力値がある。魔石力以外はステータス画面、魔石力はアビリティ画面で確認できる。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact ability-table">
+          <thead><tr><th>能力値</th><th>基本的な役割</th><th>そのほかに影響するおもな要素</th></tr></thead>
+          <tbody>
+            <tr><th>HP</th><td class="wrap">耐えられるダメージ量。攻撃を受けると残りHPが減り、ゼロになると戦闘不能になる</td><td class="wrap">リジェネ状態によるHP回復量と、毒・猛毒状態によるHP減少量（最大HPが影響）。剣技「サガク剣」や竜技「ドラゴンブレス」などで与えるダメージ量（最大HPと残りHPの差が影響）</td></tr>
+            <tr><th>MP</th><td class="wrap">アクションアビリティを使うときに消費する。消費MPが残りMPより多いアクションアビリティは使えない</td><td class="wrap">サポートアビリティ「MP消費攻撃」の効果が発動するかどうか</td></tr>
+            <tr><th>魔石力</th><td class="wrap">サポートアビリティを装備するときに消費する。高いほど一度にたくさんのサポートアビリティを装備できる</td><td class="wrap">とくになし</td></tr>
+            <tr><th>素早さ</th><td class="wrap">ATBゲージの増加速度。高いほど速くたまる</td><td class="wrap">秘技「盗賊のあかし」で与えるダメージ量。ラケット装備時の「たたかう」で与えるダメージ量</td></tr>
+            <tr><th>力</th><td class="wrap">「たたかう」をはじめ、おもに物理攻撃で与えるダメージ量</td><td class="wrap">最大HPの値</td></tr>
+            <tr><th>魔力</th><td class="wrap">黒魔法・白魔法・召喚など、おもに魔法攻撃で与えるダメージ量</td><td class="wrap">最大MPの値。ステータス異常を発生させるだけの攻撃、能力値を低下させるだけの攻撃、割合ダメージを与える攻撃、残りHPを1にする攻撃の命中率</td></tr>
+            <tr><th>気力</th><td class="wrap">ステータス異常やトランスゲージ、クリティカルヒットなど、さまざまな要素に影響する。高いほど自分に有利な状況になる</td><td class="wrap">自分に発生したステータス異常の効果時間。リジェネのHP回復ペース、毒・猛毒のHP減少ペース。敵から攻撃を受けたときのトランスゲージ増加量、トランス中に行動したときの減少量。クリティカルヒットの発生確率。盗賊刀・騎士剣装備時の「たたかう」で与えるダメージ量。奥義「ぜになげ」で与えるダメージ量。白魔法「レイズ」、召喚「フェニックス（転生の炎）」、奥義「蘇生」でのHP回復量。サポートアビリティ「カウンター」の発動確率。「ぬすむ」の成功率。黒魔法「メテオ」の命中率</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>装備品に設定されている能力値</h3>
+      <p>装備しているあいだだけ能力値を上げる装備品がある。戦闘能力が上がるほか、レベルアップ時に能力値が成長する量も増やせる。装備画面では、上がる能力値が緑、下がる能力値が赤で表示される。次の数値は装備品にだけ設定されていて、装備を変えることでしか増減しない。武器をのぞくすべての装備をはずすと、攻撃力以外はゼロになる。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact ability-table">
+          <thead><tr><th>能力値</th><th>役割</th></tr></thead>
+          <tbody>
+            <tr><th>攻撃力</th><td class="wrap">武器に設定されている。「たたかう」や一部のアクションアビリティで与えるダメージ量に影響する</td></tr>
+            <tr><th>物理防御力</th><td class="wrap">身体用防具をはじめとした各種防具やアクセサリに設定されている。物理攻撃で受けるダメージ量に影響する</td></tr>
+            <tr><th>物理回避率</th><td class="wrap">腕用防具をはじめとした各種防具やアクセサリに設定されている。物理攻撃やヴァイスの「盗む」を回避する確率に影響する</td></tr>
+            <tr><th>魔法防御力</th><td class="wrap">頭用防具をはじめとした各種防具やアクセサリに設定されている。魔法攻撃で受けるダメージ量に影響する</td></tr>
+            <tr><th>魔法回避率</th><td class="wrap">腕用防具をはじめとした各種防具やアクセサリに設定されている。ステータス異常を発生させるだけの攻撃、能力値を低下させるだけの攻撃、割合ダメージを与える攻撃、残りHPを1にする攻撃などを回避する確率に影響する</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Lv（レベル）</h2>
+      <p>Lvはキャラクターのおおまかな強さを示す数値で、上限は99。次の要素にも影響する。</p>
+      <ul>
+        <li><strong>実行者のLvだけが影響</strong>：「たたかう」や大半のアクションアビリティで与えるダメージ量とHP回復量、奥義（絶技）「ぜになげ」で消費するギル、トランス中に行動したときのトランスゲージの減少量。</li>
+        <li><strong>対象のLvだけが影響</strong>：竜技「ホワイトドロー」のMP回復量、青魔法「レベル5デス」「レベル4ホーリー」「レベル3デフレス」の成否。</li>
+        <li><strong>両者のLvが影響</strong>：L1＋R1による逃走の成功率、ステータス異常を発生させるだけの攻撃と能力値を低下させるだけの攻撃の命中率、「ぬすむ」の成功率、「ギルもぬすむ」で得られるギル、「ぶんどる」で与えるダメージ、青魔法「ゴブリンパンチ」が強化されるかどうか。</li>
+      </ul>
+      <h3>レベルアップに必要なEXP</h3>
+      <p>モンスターを倒してEXPをためるとLvが上がる。必要なEXPは全キャラクター共通。サポートアビリティ「レベルアップ」を装備すると、そのキャラクターに加算されるEXPが1.5倍になる。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>Lv</th><th>必要EXP（累計）</th><th>Lv</th><th>必要EXP（累計）</th><th>Lv</th><th>必要EXP（累計）</th><th>Lv</th><th>必要EXP（累計）</th></tr></thead>
+          <tbody>
+            <tr><th class="num">1</th><td class="num">0</td><th class="num">26</th><td class="num">41,194</td><th class="num">51</th><td class="num">511,919</td><th class="num">76</th><td class="num">2,373,113</td></tr>
+            <tr><th class="num">2</th><td class="num">16</td><th class="num">27</th><td class="num">47,291</td><th class="num">52</th><td class="num">551,285</td><th class="num">77</th><td class="num">2,496,372</td></tr>
+            <tr><th class="num">3</th><td class="num">47</td><th class="num">28</th><td class="num">54,041</td><th class="num">53</th><td class="num">592,878</td><th class="num">78</th><td class="num">2,624,372</td></tr>
+            <tr><th class="num">4</th><td class="num">101</td><th class="num">29</th><td class="num">61,488</td><th class="num">54</th><td class="num">636,782</td><th class="num">79</th><td class="num">2,757,232</td></tr>
+            <tr><th class="num">5</th><td class="num">186</td><th class="num">30</th><td class="num">69,680</td><th class="num">55</th><td class="num">683,080</td><th class="num">80</th><td class="num">2,895,074</td></tr>
+            <tr><th class="num">6</th><td class="num">314</td><th class="num">31</th><td class="num">78,664</td><th class="num">56</th><td class="num">731,858</td><th class="num">81</th><td class="num">3,038,020</td></tr>
+            <tr><th class="num">7</th><td class="num">496</td><th class="num">32</th><td class="num">88,490</td><th class="num">57</th><td class="num">783,202</td><th class="num">82</th><td class="num">3,186,196</td></tr>
+            <tr><th class="num">8</th><td class="num">746</td><th class="num">33</th><td class="num">99,208</td><th class="num">58</th><td class="num">837,202</td><th class="num">83</th><td class="num">3,339,727</td></tr>
+            <tr><th class="num">9</th><td class="num">1,078</td><th class="num">34</th><td class="num">110,872</td><th class="num">59</th><td class="num">893,947</td><th class="num">84</th><td class="num">3,498,741</td></tr>
+            <tr><th class="num">10</th><td class="num">1,510</td><th class="num">35</th><td class="num">123,535</td><th class="num">60</th><td class="num">953,529</td><th class="num">85</th><td class="num">3,663,366</td></tr>
+            <tr><th class="num">11</th><td class="num">2,059</td><th class="num">36</th><td class="num">137,253</td><th class="num">61</th><td class="num">1,016,040</td><th class="num">86</th><td class="num">3,833,734</td></tr>
+            <tr><th class="num">12</th><td class="num">2,745</td><th class="num">37</th><td class="num">152,082</td><th class="num">62</th><td class="num">1,081,576</td><th class="num">87</th><td class="num">4,009,976</td></tr>
+            <tr><th class="num">13</th><td class="num">3,588</td><th class="num">38</th><td class="num">168,082</td><th class="num">63</th><td class="num">1,150,232</td><th class="num">88</th><td class="num">4,192,226</td></tr>
+            <tr><th class="num">14</th><td class="num">4,612</td><th class="num">39</th><td class="num">185,312</td><th class="num">64</th><td class="num">1,222,106</td><th class="num">89</th><td class="num">4,380,618</td></tr>
+            <tr><th class="num">15</th><td class="num">5,840</td><th class="num">40</th><td class="num">203,834</td><th class="num">65</th><td class="num">1,297,296</td><th class="num">90</th><td class="num">4,575,290</td></tr>
+            <tr><th class="num">16</th><td class="num">7,298</td><th class="num">41</th><td class="num">223,710</td><th class="num">66</th><td class="num">1,375,904</td><th class="num">91</th><td class="num">4,776,379</td></tr>
+            <tr><th class="num">17</th><td class="num">9,012</td><th class="num">42</th><td class="num">245,006</td><th class="num">67</th><td class="num">1,458,031</td><th class="num">92</th><td class="num">4,984,025</td></tr>
+            <tr><th class="num">18</th><td class="num">11,012</td><th class="num">43</th><td class="num">267,787</td><th class="num">68</th><td class="num">1,543,781</td><th class="num">93</th><td class="num">5,198,368</td></tr>
+            <tr><th class="num">19</th><td class="num">13,327</td><th class="num">44</th><td class="num">292,121</td><th class="num">69</th><td class="num">1,633,258</td><th class="num">94</th><td class="num">5,419,552</td></tr>
+            <tr><th class="num">20</th><td class="num">15,989</td><th class="num">45</th><td class="num">318,076</td><th class="num">70</th><td class="num">1,726,570</td><th class="num">95</th><td class="num">5,647,720</td></tr>
+            <tr><th class="num">21</th><td class="num">19,030</td><th class="num">46</th><td class="num">345,724</td><th class="num">71</th><td class="num">1,823,824</td><th class="num">96</th><td class="num">5,883,018</td></tr>
+            <tr><th class="num">22</th><td class="num">22,486</td><th class="num">47</th><td class="num">375,136</td><th class="num">72</th><td class="num">1,925,130</td><th class="num">97</th><td class="num">6,125,592</td></tr>
+            <tr><th class="num">23</th><td class="num">26,392</td><th class="num">48</th><td class="num">406,386</td><th class="num">73</th><td class="num">2,030,598</td><th class="num">98</th><td class="num">6,375,592</td></tr>
+            <tr><th class="num">24</th><td class="num">30,786</td><th class="num">49</th><td class="num">439,548</td><th class="num">74</th><td class="num">2,140,342</td><th class="num">99</th><td class="num">6,633,167</td></tr>
+            <tr><th class="num">25</th><td class="num">35,706</td><th class="num">50</th><td class="num">474,700</td><th class="num">75</th><td class="num">2,254,475</td><th class="num"></th><td class="num"></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        バトル終了時に各キャラクターが得るEXPは、倒した敵の合計EXPをメンバーの人数で頭割りしたもの（4人で合計200なら各50）。バトル終了時に石化・ウイルス・ゾンビ・戦闘不能のいずれかだったキャラクターはEXPを得られず、頭割りの人数にも含まれない（4人のうちひとりが石化なら3人で分けて各66、小数点以下切り捨て）。「レベルアップ」で増えるのは頭割り後のEXP。
+      </p>
+      <h3>仲間に加わったときのLv</h3>
+      <p>はじめて仲間に加わるキャラクターのLvは、基本的にその時点でパーティーにいたメンバーの平均Lvになる。以前に離脱したキャラクターが再加入するときのLvは離脱したときと同じ（マーカス・ブランク・ベアトリクスは再加入時に上がっていることがある）。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact ability-table">
+          <thead><tr><th>キャラクター</th><th>はじめて仲間に加わったときのLv</th></tr></thead>
+          <tbody>
+            <tr><th>ジタン</th><td class="wrap">Lv1</td></tr>
+            <tr><th>ビビ</th><td class="wrap">Lv1</td></tr>
+            <tr><th>ガーネット</th><td class="wrap">Lv1</td></tr>
+            <tr><th>スタイナー</th><td class="wrap">Lv1</td></tr>
+            <tr><th>フライヤ</th><td class="wrap">ジタンとビビの平均Lv（狩猟祭で初加入した場合はジタンと同じLv）</td></tr>
+            <tr><th>クイナ</th><td class="wrap">ジタン・ビビ・フライヤ（DISC 2で初加入した場合はジタン・ビビ・ガーネット）の平均Lv</td></tr>
+            <tr><th>エーコ</th><td class="wrap">ジタン・ビビ・ガーネット・クイナの平均Lv</td></tr>
+            <tr><th>サラマンダー</th><td class="wrap">ジタン・ビビ・ガーネット・エーコの平均Lvと、ブランクが仲間から離脱したときのLvを比べて高いほうのLv</td></tr>
+            <tr><th>シナ</th><td class="wrap">Lv1</td></tr>
+            <tr><th>マーカス</th><td class="wrap">Lv1。南ゲート（山頂の駅）で再加入するときは、ガーネットとスタイナーの平均Lv</td></tr>
+            <tr><th>ブランク</th><td class="wrap">Lv1。魔の森で再加入するときは、ジタン・ビビ・スタイナーの平均Lv</td></tr>
+            <tr><th>ベアトリクス</th><td class="wrap">フライヤと同じLv。アレクサンドリア（襲撃時）で再加入するときは、スタイナーのLvとベアトリクスが仲間から離脱したときのLvを比べて高いほうのLv</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Lv2以上で加入したキャラクターは、そのLvになるのに必要な量のEXPを最初から持っている。ただしサラマンダーは、ジタン・ビビ・ガーネット・エーコの平均Lvがブランクの離脱時のLv以下の場合だけ、ブランクが得ていたEXPをそのまま引き継ぐ。</p>
+
+      <h2>能力値の成長</h2>
+      <p>すべての能力値はレベルアップ時に成長し、成長量はプレイのしかたで変わる。</p>
+      <h3>最大HPと最大MP</h3>
+      <pre><code>最大HP ＝ 力 × そのLvでのベース値
+最大MP ＝ 魔力 × そのLvでのベース値
+※小数点以下切り捨て。力・魔力には装備による上昇量を含まない</code></pre>
+      <p>Lvと能力値が同じなら、どのキャラクターでも最大HPと最大MPは同じになる。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>Lv</th><th>HP</th><th>MP</th><th>Lv</th><th>HP</th><th>MP</th><th>Lv</th><th>HP</th><th>MP</th></tr></thead>
+          <tbody>
+            <tr><th class="num">1</th><td class="num">5.00</td><td class="num">2.00</td><th class="num">34</th><td class="num">63.24</td><td class="num">4.77</td><th class="num">67</th><td class="num">87.86</td><td class="num">6.01</td></tr>
+            <tr><th class="num">2</th><td class="num">6.28</td><td class="num">2.06</td><th class="num">35</th><td class="num">65.64</td><td class="num">4.89</td><th class="num">68</th><td class="num">87.88</td><td class="num">6.02</td></tr>
+            <tr><th class="num">3</th><td class="num">7.64</td><td class="num">2.12</td><th class="num">36</th><td class="num">67.88</td><td class="num">5.00</td><th class="num">69</th><td class="num">87.90</td><td class="num">6.03</td></tr>
+            <tr><th class="num">4</th><td class="num">9.08</td><td class="num">2.19</td><th class="num">37</th><td class="num">69.96</td><td class="num">5.10</td><th class="num">70</th><td class="num">87.92</td><td class="num">6.04</td></tr>
+            <tr><th class="num">5</th><td class="num">10.60</td><td class="num">2.26</td><th class="num">38</th><td class="num">71.88</td><td class="num">5.19</td><th class="num">71</th><td class="num">87.94</td><td class="num">6.05</td></tr>
+            <tr><th class="num">6</th><td class="num">12.20</td><td class="num">2.34</td><th class="num">39</th><td class="num">73.64</td><td class="num">5.27</td><th class="num">72</th><td class="num">87.96</td><td class="num">6.06</td></tr>
+            <tr><th class="num">7</th><td class="num">13.88</td><td class="num">2.42</td><th class="num">40</th><td class="num">75.24</td><td class="num">5.35</td><th class="num">73</th><td class="num">87.98</td><td class="num">6.07</td></tr>
+            <tr><th class="num">8</th><td class="num">15.64</td><td class="num">2.50</td><th class="num">41</th><td class="num">76.68</td><td class="num">5.42</td><th class="num">74</th><td class="num">88.00</td><td class="num">6.08</td></tr>
+            <tr><th class="num">9</th><td class="num">17.48</td><td class="num">2.59</td><th class="num">42</th><td class="num">77.96</td><td class="num">5.48</td><th class="num">75</th><td class="num">88.02</td><td class="num">6.09</td></tr>
+            <tr><th class="num">10</th><td class="num">19.40</td><td class="num">2.68</td><th class="num">43</th><td class="num">79.16</td><td class="num">5.54</td><th class="num">76</th><td class="num">88.04</td><td class="num">6.10</td></tr>
+            <tr><th class="num">11</th><td class="num">21.24</td><td class="num">2.77</td><th class="num">44</th><td class="num">80.28</td><td class="num">5.59</td><th class="num">77</th><td class="num">88.06</td><td class="num">6.11</td></tr>
+            <tr><th class="num">12</th><td class="num">23.00</td><td class="num">2.85</td><th class="num">45</th><td class="num">81.32</td><td class="num">5.64</td><th class="num">78</th><td class="num">88.08</td><td class="num">6.12</td></tr>
+            <tr><th class="num">13</th><td class="num">24.68</td><td class="num">2.93</td><th class="num">46</th><td class="num">82.28</td><td class="num">5.68</td><th class="num">79</th><td class="num">88.10</td><td class="num">6.13</td></tr>
+            <tr><th class="num">14</th><td class="num">26.28</td><td class="num">3.01</td><th class="num">47</th><td class="num">83.16</td><td class="num">5.72</td><th class="num">80</th><td class="num">88.12</td><td class="num">6.14</td></tr>
+            <tr><th class="num">15</th><td class="num">27.80</td><td class="num">3.08</td><th class="num">48</th><td class="num">83.96</td><td class="num">5.76</td><th class="num">81</th><td class="num">88.14</td><td class="num">6.15</td></tr>
+            <tr><th class="num">16</th><td class="num">29.24</td><td class="num">3.15</td><th class="num">49</th><td class="num">84.68</td><td class="num">5.79</td><th class="num">82</th><td class="num">88.16</td><td class="num">6.16</td></tr>
+            <tr><th class="num">17</th><td class="num">30.60</td><td class="num">3.21</td><th class="num">50</th><td class="num">85.32</td><td class="num">5.82</td><th class="num">83</th><td class="num">88.18</td><td class="num">6.17</td></tr>
+            <tr><th class="num">18</th><td class="num">31.88</td><td class="num">3.27</td><th class="num">51</th><td class="num">85.88</td><td class="num">5.84</td><th class="num">84</th><td class="num">88.20</td><td class="num">6.18</td></tr>
+            <tr><th class="num">19</th><td class="num">33.24</td><td class="num">3.33</td><th class="num">52</th><td class="num">86.34</td><td class="num">5.86</td><th class="num">85</th><td class="num">88.22</td><td class="num">6.19</td></tr>
+            <tr><th class="num">20</th><td class="num">34.68</td><td class="num">3.40</td><th class="num">53</th><td class="num">86.68</td><td class="num">5.87</td><th class="num">86</th><td class="num">88.24</td><td class="num">6.20</td></tr>
+            <tr><th class="num">21</th><td class="num">36.20</td><td class="num">3.47</td><th class="num">54</th><td class="num">86.88</td><td class="num">5.88</td><th class="num">87</th><td class="num">88.26</td><td class="num">6.21</td></tr>
+            <tr><th class="num">22</th><td class="num">37.80</td><td class="num">3.55</td><th class="num">55</th><td class="num">87.06</td><td class="num">5.89</td><th class="num">88</th><td class="num">88.28</td><td class="num">6.22</td></tr>
+            <tr><th class="num">23</th><td class="num">39.48</td><td class="num">3.63</td><th class="num">56</th><td class="num">87.22</td><td class="num">5.90</td><th class="num">89</th><td class="num">88.30</td><td class="num">6.23</td></tr>
+            <tr><th class="num">24</th><td class="num">41.24</td><td class="num">3.71</td><th class="num">57</th><td class="num">87.36</td><td class="num">5.91</td><th class="num">90</th><td class="num">88.32</td><td class="num">6.24</td></tr>
+            <tr><th class="num">25</th><td class="num">43.08</td><td class="num">3.80</td><th class="num">58</th><td class="num">87.48</td><td class="num">5.92</td><th class="num">91</th><td class="num">88.34</td><td class="num">6.25</td></tr>
+            <tr><th class="num">26</th><td class="num">45.00</td><td class="num">3.89</td><th class="num">59</th><td class="num">87.58</td><td class="num">5.93</td><th class="num">92</th><td class="num">88.36</td><td class="num">6.26</td></tr>
+            <tr><th class="num">27</th><td class="num">47.00</td><td class="num">3.99</td><th class="num">60</th><td class="num">87.66</td><td class="num">5.94</td><th class="num">93</th><td class="num">88.38</td><td class="num">6.27</td></tr>
+            <tr><th class="num">28</th><td class="num">49.08</td><td class="num">4.09</td><th class="num">61</th><td class="num">87.72</td><td class="num">5.95</td><th class="num">94</th><td class="num">88.40</td><td class="num">6.28</td></tr>
+            <tr><th class="num">29</th><td class="num">51.24</td><td class="num">4.19</td><th class="num">62</th><td class="num">87.76</td><td class="num">5.96</td><th class="num">95</th><td class="num">88.42</td><td class="num">6.29</td></tr>
+            <tr><th class="num">30</th><td class="num">53.48</td><td class="num">4.30</td><th class="num">63</th><td class="num">87.78</td><td class="num">5.97</td><th class="num">96</th><td class="num">88.44</td><td class="num">6.30</td></tr>
+            <tr><th class="num">31</th><td class="num">55.80</td><td class="num">4.41</td><th class="num">64</th><td class="num">87.80</td><td class="num">5.98</td><th class="num">97</th><td class="num">88.46</td><td class="num">6.31</td></tr>
+            <tr><th class="num">32</th><td class="num">58.20</td><td class="num">4.53</td><th class="num">65</th><td class="num">87.82</td><td class="num">5.99</td><th class="num">98</th><td class="num">88.48</td><td class="num">6.32</td></tr>
+            <tr><th class="num">33</th><td class="num">60.68</td><td class="num">4.65</td><th class="num">66</th><td class="num">87.84</td><td class="num">6.00</td><th class="num">99</th><td class="num">90.48</td><td class="num">6.42</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>魔石力・素早さ・力・魔力・気力</h3>
+      <pre><code>能力値 ＝ 初期値 ＋（成長ボーナス ÷ 32）＋ そのLvでのLv修正値
+※小数点以下切り捨て</code></pre>
+      <p>
+        「成長ボーナス」は能力値ごとに数えられている画面に出ない数値で、32たまるごとに能力値が1余分に成長する。レベルアップのたびに下の表の量ずつ蓄積され、装備品で能力値が上がっているとそのぶん蓄積量が大きくなる。レベルアップが近いキャラクターには、育てたい能力値が上がるアイテムを装備させておくと、ある程度希望どおりに育てられる。初期値はキャラクターごとに決まっている。
+      </p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>能力値</th><th>レベルアップ時に蓄積される成長ボーナス</th></tr></thead>
+          <tbody>
+            <tr><th>魔石力</th><td>5</td></tr>
+            <tr><th>素早さ</th><td>装備品による素早さの上昇分</td></tr>
+            <tr><th>力</th><td>3＋装備品による力の上昇分</td></tr>
+            <tr><th>魔力</th><td>3＋装備品による魔力の上昇分</td></tr>
+            <tr><th>気力</th><td>1＋装備品による気力の上昇分</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h4>Lv修正値</h4>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th colspan="2">魔石力</th><th colspan="2">素早さ</th><th colspan="2">力・魔力</th><th colspan="2">気力</th></tr></thead>
+          <tbody>
+            <tr><td>Lv1〜2</td><td class="num">0</td><td>Lv1〜9</td><td class="num">0</td><td>Lv1〜3</td><td class="num">0</td><td>Lv1〜6</td><td class="num">0</td></tr>
+            <tr><td>Lv3〜4</td><td class="num">1</td><td>Lv10〜19</td><td class="num">1</td><td>Lv4〜6</td><td class="num">1</td><td>Lv7〜13</td><td class="num">1</td></tr>
+            <tr><td>Lv5〜7</td><td class="num">2</td><td>Lv20〜29</td><td class="num">2</td><td>Lv7〜9</td><td class="num">2</td><td>Lv14〜19</td><td class="num">2</td></tr>
+            <tr><td>Lv8〜9</td><td class="num">3</td><td>Lv30〜39</td><td class="num">3</td><td>Lv10〜13</td><td class="num">3</td><td>Lv20〜26</td><td class="num">3</td></tr>
+            <tr><td>Lv10〜12</td><td class="num">4</td><td>Lv40〜49</td><td class="num">4</td><td>Lv14〜16</td><td class="num">4</td><td>Lv27〜33</td><td class="num">4</td></tr>
+            <tr><td>Lv13〜14</td><td class="num">5</td><td>Lv50〜59</td><td class="num">5</td><td>Lv17〜19</td><td class="num">5</td><td>Lv34〜39</td><td class="num">5</td></tr>
+            <tr><td>Lv15〜17</td><td class="num">6</td><td>Lv60〜69</td><td class="num">6</td><td>Lv20〜23</td><td class="num">6</td><td>Lv40〜46</td><td class="num">6</td></tr>
+            <tr><td>Lv18〜19</td><td class="num">7</td><td>Lv70〜79</td><td class="num">7</td><td>Lv24〜26</td><td class="num">7</td><td>Lv47〜53</td><td class="num">7</td></tr>
+            <tr><td>Lv20〜22</td><td class="num">8</td><td>Lv80〜89</td><td class="num">8</td><td>Lv27〜29</td><td class="num">8</td><td>Lv54〜59</td><td class="num">8</td></tr>
+            <tr><td>Lv23〜24</td><td class="num">9</td><td>Lv90〜99</td><td class="num">9</td><td>Lv30〜33</td><td class="num">9</td><td>Lv60〜66</td><td class="num">9</td></tr>
+            <tr><td>Lv25〜27</td><td class="num">10</td><td></td><td class="num"></td><td>Lv34〜36</td><td class="num">10</td><td>Lv67〜73</td><td class="num">10</td></tr>
+            <tr><td>Lv28〜29</td><td class="num">11</td><td></td><td class="num"></td><td>Lv37〜39</td><td class="num">11</td><td>Lv74〜79</td><td class="num">11</td></tr>
+            <tr><td>Lv30〜32</td><td class="num">12</td><td></td><td class="num"></td><td>Lv40〜43</td><td class="num">12</td><td>Lv80〜86</td><td class="num">12</td></tr>
+            <tr><td>Lv33〜34</td><td class="num">13</td><td></td><td class="num"></td><td>Lv44〜46</td><td class="num">13</td><td>Lv87〜93</td><td class="num">13</td></tr>
+            <tr><td>Lv35〜37</td><td class="num">14</td><td></td><td class="num"></td><td>Lv47〜49</td><td class="num">14</td><td>Lv94〜99</td><td class="num">14</td></tr>
+            <tr><td>Lv38〜39</td><td class="num">15</td><td></td><td class="num"></td><td>Lv50〜53</td><td class="num">15</td><td></td><td class="num"></td></tr>
+            <tr><td>Lv40〜42</td><td class="num">16</td><td></td><td class="num"></td><td>Lv54〜56</td><td class="num">16</td><td></td><td class="num"></td></tr>
+            <tr><td>Lv43〜44</td><td class="num">17</td><td></td><td class="num"></td><td>Lv57〜59</td><td class="num">17</td><td></td><td class="num"></td></tr>
+            <tr><td>Lv45〜47</td><td class="num">18</td><td></td><td class="num"></td><td>Lv60〜63</td><td class="num">18</td><td></td><td class="num"></td></tr>
+            <tr><td>Lv48〜49</td><td class="num">19</td><td></td><td class="num"></td><td>Lv64〜66</td><td class="num">19</td><td></td><td class="num"></td></tr>
+            <tr><td>Lv50〜52</td><td class="num">20</td><td></td><td class="num"></td><td>Lv67〜69</td><td class="num">20</td><td></td><td class="num"></td></tr>
+            <tr><td>Lv53〜54</td><td class="num">21</td><td></td><td class="num"></td><td>Lv70〜73</td><td class="num">21</td><td></td><td class="num"></td></tr>
+            <tr><td>Lv55〜57</td><td class="num">22</td><td></td><td class="num"></td><td>Lv74〜76</td><td class="num">22</td><td></td><td class="num"></td></tr>
+            <tr><td>Lv58〜59</td><td class="num">23</td><td></td><td class="num"></td><td>Lv77〜79</td><td class="num">23</td><td></td><td class="num"></td></tr>
+            <tr><td>Lv60〜62</td><td class="num">24</td><td></td><td class="num"></td><td>Lv80〜83</td><td class="num">24</td><td></td><td class="num"></td></tr>
+            <tr><td>Lv63〜64</td><td class="num">25</td><td></td><td class="num"></td><td>Lv84〜86</td><td class="num">25</td><td></td><td class="num"></td></tr>
+            <tr><td>Lv65〜67</td><td class="num">26</td><td></td><td class="num"></td><td>Lv87〜89</td><td class="num">26</td><td></td><td class="num"></td></tr>
+            <tr><td>Lv68〜69</td><td class="num">27</td><td></td><td class="num"></td><td>Lv90〜93</td><td class="num">27</td><td></td><td class="num"></td></tr>
+            <tr><td>Lv70〜72</td><td class="num">28</td><td></td><td class="num"></td><td>Lv94〜96</td><td class="num">28</td><td></td><td class="num"></td></tr>
+            <tr><td>Lv73〜74</td><td class="num">29</td><td></td><td class="num"></td><td>Lv97〜99</td><td class="num">29</td><td></td><td class="num"></td></tr>
+            <tr><td>Lv75〜77</td><td class="num">30</td><td></td><td class="num"></td><td></td><td class="num"></td><td></td><td class="num"></td></tr>
+            <tr><td>Lv78〜79</td><td class="num">31</td><td></td><td class="num"></td><td></td><td class="num"></td><td></td><td class="num"></td></tr>
+            <tr><td>Lv80〜82</td><td class="num">32</td><td></td><td class="num"></td><td></td><td class="num"></td><td></td><td class="num"></td></tr>
+            <tr><td>Lv83〜84</td><td class="num">33</td><td></td><td class="num"></td><td></td><td class="num"></td><td></td><td class="num"></td></tr>
+            <tr><td>Lv85〜87</td><td class="num">34</td><td></td><td class="num"></td><td></td><td class="num"></td><td></td><td class="num"></td></tr>
+            <tr><td>Lv88〜89</td><td class="num">35</td><td></td><td class="num"></td><td></td><td class="num"></td><td></td><td class="num"></td></tr>
+            <tr><td>Lv90〜92</td><td class="num">36</td><td></td><td class="num"></td><td></td><td class="num"></td><td></td><td class="num"></td></tr>
+            <tr><td>Lv93〜94</td><td class="num">37</td><td></td><td class="num"></td><td></td><td class="num"></td><td></td><td class="num"></td></tr>
+            <tr><td>Lv95〜97</td><td class="num">38</td><td></td><td class="num"></td><td></td><td class="num"></td><td></td><td class="num"></td></tr>
+            <tr><td>Lv98〜99</td><td class="num">39</td><td></td><td class="num"></td><td></td><td class="num"></td><td></td><td class="num"></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>マーカスの成長ボーナスはエーコに引き継がれる</h3>
+      <p>
+        はじめて仲間に加わったキャラクターの成長ボーナスはゼロだが、エーコだけは例外で、マーカスが得ていた成長ボーナスをそのまま引き継ぐ。下のアイテムを使ってマーカスの成長ボーナスをかせいでおけば、エーコの能力値を底上げできる。
+        このときガーネットを戦闘不能にしてレベルアップを防いでおかないと、エーコの初加入時のLvが高くなり、エーコ自身がレベルアップする（成長ボーナスを得る）機会が減ってしまう。
+      </p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>部位</th><th>アイテム</th><th>能力値の上昇量</th></tr></thead>
+          <tbody>
+            <tr><td>武器</td><th>どれでもいい</th><td>―</td></tr>
+            <tr><td>頭用防具</td><th>バンダナ</th><td>素早さ＋1、気力＋1</td></tr>
+            <tr><td>頭用防具</td><th>とんがり帽子</th><td>力＋1</td></tr>
+            <tr><td>腕用防具</td><th>ボーンリスト</th><td>力＋1</td></tr>
+            <tr><td>腕用防具</td><th>皮のリスト</th><td>気力＋1</td></tr>
+            <tr><td>腕用防具</td><th>ミスリルの腕輪</th><td>気力＋1</td></tr>
+            <tr><td>身体用防具</td><th>ブロンズの胸当て</th><td>気力＋1</td></tr>
+            <tr><td>身体用防具</td><th>チェインプレイト</th><td>力＋1</td></tr>
+            <tr><td>アクセサリ</td><th>魔術師のくつ</th><td>魔力＋2</td></tr>
+            <tr><td>アクセサリ</td><th>パワーベルト</th><td>力＋3</td></tr>
+            <tr><td>アクセサリ</td><th>ガラスのバックル</th><td>力＋1、魔力＋1、気力＋2</td></tr>
+            <tr><td>アクセサリ</td><th>金のチョーカー</th><td>魔力＋2</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>マーカスを大幅にレベルアップさせるには時間がかかる。連射機能つきのコントローラがあれば、ガルガン・ルーの乗降口で方向キーを←に入れたまま○ボタンを連射させておくと、全滅しないかぎり自動でバトルをくり返せる。HPの回復手段として、マーカスにブラッドソードを装備させておく。</p>
+
+      <h2>能力値の上限</h2>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>能力値</th><th>上限</th></tr></thead>
+          <tbody>
+            <tr><th>HP</th><td class="num">9,999</td></tr>
+            <tr><th>MP</th><td class="num">999</td></tr>
+            <tr><th>魔石力・力・魔力</th><td class="num">99</td></tr>
+            <tr><th>素早さ・気力</th><td class="num">50</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>装備やアビリティを使っても、能力値がこれらの値を超えることはない。上限まで育てるのは難しく、唯一の例外は気力（上限50で成長ボーナスも得やすい）。素早さ・力・魔力は理論上は上限まで育てられるが、キャラクターが限られるうえに手間がかかる。最大MPは「Lvと魔力を99にしてMP10%アップとMP20%アップを装備」で837まで、魔石力は「マーカスをLv99にしたあとでエーコをLv1で仲間にしてLv99まで育てる」で81まで上げられる。</p>
+      <ul>
+        <li><strong>ジタンの素早さを50に</strong>：装備で素早さを7増やした状態で、Lv16以下のジタンをLv99まで育てる（装備の例：オリハルコン・シーフの帽子・盗賊のこて・忍びの衣・エルメスのくつ）。</li>
+        <li><strong>サラマンダーの最大HPを9999に</strong>：Lv3以下で仲間にし、装備で力を8増やした状態でLv99まで育て（グリーンベレー・パワーリスト・力だすき・ダークマター）、「HP10%アップ」「HP20%アップ」を装備する。</li>
+        <li><strong>エーコの力を99に</strong>：マーカスが力の成長ボーナスを746以上得た状態で、エーコをLv1で仲間にし（マーカスの成長ボーナスしだいではLv1より高くてもよい）、装備で力を8増やした状態でLv99まで育てる（グリーンベレー・パワーリスト・力だすき・ダークマター）。</li>
+        <li><strong>エーコの魔力を99に</strong>：マーカスが魔力の成長ボーナスを294以上得た状態で、エーコをLv1で仲間にし、装備で魔力を10増やした状態でLv99まで育てる（魔法のラケット・司祭の帽子・魔法の腕輪・ミネルバビスチェ・リボン）。</li>
+      </ul>
+
+      <div class="related">
+        <h2>関連ページ</h2>
+        <ul>
+          <li><a href="/ff9/battle/">バトルシステムの基本</a></li>
+          <li><a href="/ff9/characters/">キャラクター（初期能力値）</a></li>
+          <li><a href="/ff9/items/">アイテム・装備</a></li>
+          <li><a href="/ff9/monsters/">モンスター図鑑（EXPの仕組み）</a></li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-links">
+        <a href="/ff9/">トップ</a>
+        <a href="/ff9/about/">このWikiについて</a>
+        <a href="/ff9/privacy/">プライバシーポリシー</a>
+        <a href="/ff9/contact/">お問い合わせ</a>
+      </p>
+      <p class="footer-copy">
+        当サイトは非公式のファンサイトです。ゲーム内の画像・名称等の著作権は各権利者に帰属します。<br>
+        &copy; 2026 ファイナルファンタジーIX 攻略Wiki      </p>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top" aria-label="ページ上部へ">▲</a>
+
+  <script src="/ff9/js/main.js?v=a69a038c"></script>
+</body>
+</html>

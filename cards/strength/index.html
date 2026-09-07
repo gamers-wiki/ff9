@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カードの強さ・成長・戦略・コレクターズレベル - ファイナルファンタジーIX 攻略Wiki</title>
+  <meta name="description" content="FF9のクアッドミストのカードの強さ。攻撃力・攻撃タイプ（P/M/X/A）・防御力の意味、16進数表示の読みかた、カードの成長条件、入手時の性能の決まりかた、基本戦略、収集ポイントとコレクターズレベルの一覧。">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://gamers-wiki.github.io/ff9/cards/strength/">
+
+  <meta property="og:site_name" content="ファイナルファンタジーIX 攻略Wiki">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="カードの強さ・成長・戦略・コレクターズレベル - ファイナルファンタジーIX 攻略Wiki">
+  <meta property="og:description" content="FF9のクアッドミストのカードの強さ。攻撃力・攻撃タイプ（P/M/X/A）・防御力の意味、16進数表示の読みかた、カードの成長条件、入手時の性能の決まりかた、基本戦略、収集ポイントとコレクターズレベルの一覧。">
+  <meta property="og:url" content="https://gamers-wiki.github.io/ff9/cards/strength/">
+  <meta property="og:image" content="https://gamers-wiki.github.io/ff9/images/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="カードの強さ・成長・戦略・コレクターズレベル - ファイナルファンタジーIX 攻略Wiki">
+  <meta name="twitter:description" content="FF9のクアッドミストのカードの強さ。攻撃力・攻撃タイプ（P/M/X/A）・防御力の意味、16進数表示の読みかた、カードの成長条件、入手時の性能の決まりかた、基本戦略、収集ポイントとコレクターズレベルの一覧。">
+  <meta name="twitter:image" content="https://gamers-wiki.github.io/ff9/images/ogp.png">
+
+  <link rel="icon" href="/ff9/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/ff9/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/ff9/apple-touch-icon.png">
+  <meta name="theme-color" content="#171433">
+
+  <link rel="stylesheet" href="/ff9/css/style.css?v=4bada4bf">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://gamers-wiki.github.io/ff9/"},{"@type":"ListItem","position":2,"name":"クアッドミスト","item":"https://gamers-wiki.github.io/ff9/cards/"},{"@type":"ListItem","position":3,"name":"カードの強さ・成長・戦略","item":"https://gamers-wiki.github.io/ff9/cards/strength/"}]}</script>
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/ff9/" class="site-logo">
+        <span class="logo-mark" aria-hidden="true">✦</span>
+        <span class="logo-text">
+          <span class="logo-title">FINAL FANTASY IX</span>
+          <span class="logo-sub">攻略Wiki</span>
+        </span>
+      </a>
+      <form class="site-search" action="/ff9/search/" method="get" role="search">
+        <input type="search" name="q" placeholder="Wiki内を検索（例：ジタン、合成、チョコグラフ）" aria-label="Wiki内検索" maxlength="100">
+        <button type="submit">検索</button>
+      </form>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== グローバルナビ ===== -->
+  <nav class="global-nav" id="global-nav">
+    <ul>
+      <li><a href="/ff9/">トップ</a></li>
+      <li><a href="/ff9/story/">ストーリー攻略</a></li>
+      <li><a href="/ff9/characters/">キャラクター</a></li>
+      <li><a href="/ff9/battle/">バトル</a></li>
+      <li><a href="/ff9/abilities/">アビリティ</a></li>
+      <li><a href="/ff9/eidolons/">召喚獣</a></li>
+      <li><a href="/ff9/items/">アイテム・装備</a></li>
+      <li><a href="/ff9/monsters/">モンスター</a></li>
+      <li><a href="/ff9/chocobo/">チョコボ</a></li>
+      <li><a href="/ff9/minigames/">ミニゲーム</a></li>
+      <li><a href="/ff9/cards/" class="current">クアッドミスト</a></li>
+      <li><a href="/ff9/extra/">やり込み</a></li>
+      <li class="nav-column"><a href="/ff9/column/">解説</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== パンくず ===== -->
+  <div class="breadcrumb">
+    <ol>
+      <li><a href="/ff9/">トップ</a></li>
+      <li><a href="/ff9/cards/">クアッドミスト</a></li>
+      <li>カードの強さ・成長・戦略</li>
+    </ol>
+  </div>
+
+  <div class="layout layout-2col">
+    <aside class="sidebar sidebar-left">
+      <div class="side-box">
+        <h2 class="side-title">メニュー</h2>
+        <ul class="side-menu">
+          <li><a href="/ff9/story/">ストーリー攻略チャート</a></li>
+          <li><a href="/ff9/characters/">キャラクター</a></li>
+          <li><a href="/ff9/battle/">バトルシステム</a></li>
+          <li><a href="/ff9/abilities/">アビリティ</a></li>
+          <li><a href="/ff9/eidolons/">召喚獣</a></li>
+          <li><a href="/ff9/items/">アイテム・装備</a></li>
+          <li><a href="/ff9/items/synthesis/">合成リスト</a></li>
+          <li><a href="/ff9/monsters/">モンスター図鑑</a></li>
+          <li><a href="/ff9/chocobo/">チョコボ</a></li>
+          <li><a href="/ff9/minigames/">ミニゲーム</a></li>
+          <li><a href="/ff9/cards/">クアッドミスト</a></li>
+          <li><a href="/ff9/extra/">やり込み・サブイベント</a></li>
+          <li><a href="/ff9/extra/missable/">取り返しのつかない要素</a></li>
+          <li><a href="/ff9/column/">世界設定・年表・用語集</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">キャラクター</h2>
+        <ul class="side-menu char-list">
+          <li><a href="/ff9/characters/zidane/">ジタン</a></li>
+          <li><a href="/ff9/characters/vivi/">ビビ</a></li>
+          <li><a href="/ff9/characters/garnet/">ガーネット</a></li>
+          <li><a href="/ff9/characters/steiner/">スタイナー</a></li>
+          <li><a href="/ff9/characters/freya/">フライヤ</a></li>
+          <li><a href="/ff9/characters/quina/">クイナ</a></li>
+          <li><a href="/ff9/characters/eiko/">エーコ</a></li>
+          <li><a href="/ff9/characters/amarant/">サラマンダー</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title side-title-column">解説</h2>
+        <ul class="side-menu column-list">
+          <li><a href="/ff9/column/">記事一覧</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">Wikiについて</h2>
+        <ul class="side-menu">
+          <li><a href="/ff9/about/">このWikiについて</a></li>
+          <li><a href="/ff9/contact/">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </aside>
+    <main class="content">
+
+      <div class="article-header">
+        <h1>カードの強さ・成長・戦略・コレクターズレベル</h1>
+        <div class="article-meta"><span>カテゴリ：<a href="/ff9/cards/">クアッドミスト</a></span></div>
+      </div>
+
+      <div class="toc" data-auto-toc></div>
+
+      <h2>カードの性能</h2>
+      <p>
+        カードの強さは、三角マークの配置と能力値の高さで決まる。能力値は攻撃力・攻撃タイプ・物理防御力・魔法防御力の4種類で、カードにこの順で並んで表示されている。
+        攻撃タイプはカードバトルで初期パワーになる能力値の種類を決めるもので、P・M・X・Aの4種類。攻撃タイプは攻撃側になったときにしか意味を持たない。
+      </p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>攻撃側の攻撃タイプ</th><th>攻撃側の初期パワー</th><th>防御側の初期パワー</th></tr></thead>
+          <tbody>
+            <tr><th>P</th><td>攻撃力</td><td>物理防御力</td></tr>
+            <tr><th>M</th><td>攻撃力</td><td>魔法防御力</td></tr>
+            <tr><th>X</th><td>攻撃力</td><td>物理防御力と魔法防御力のうち低いほう</td></tr>
+            <tr><th>A</th><td>攻撃力・物理防御力・魔法防御力のうち一番高いもの</td><td>攻撃力・物理防御力・魔法防御力のうち一番低いもの</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        攻撃タイプ以外の能力値は「16進数表記の上1ケタ」だけが表示される。「1」と表示されていれば16〜31のどれか、というところまでしか分からない。正確な値はカードバトル開始時に表示される初期パワーで確かめられる。能力値の最低は0、最高はFF（10進数で255）。
+      </p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr></thead>
+          <tbody><tr><td>0〜15</td><td>16〜31</td><td>32〜47</td><td>48〜63</td><td>64〜79</td><td>80〜95</td><td>96〜111</td><td>112〜127</td><td>128〜143</td><td>144〜159</td><td>160〜175</td><td>176〜191</td><td>192〜207</td><td>208〜223</td><td>224〜239</td><td>240〜255</td></tr></tbody>
+        </table>
+      </div>
+
+      <h2>カードの成長</h2>
+      <ul>
+        <li><strong>攻撃力・物理防御力・魔法防御力</strong>：カードゲームに勝つと、使用した5枚のカードそれぞれで、ランダムに選ばれた能力値が1上がる（選ばれた能力値が上限に達しているときは変化なし）。上限はカードの種類ごとに決まっている。カードバトルをしなかったカードでも上がる。</li>
+        <li><strong>攻撃タイプ</strong>：カードバトルに勝つと成長することがある。PまたはM→Xは256分の4（約1.5%）、X→Aは256分の2（約0.8%）。段階を追って成長し、PやMがいきなりAになることはない。</li>
+        <li>成長のしやすさに、カードの種類や対戦相手の強さは関係ない。</li>
+      </ul>
+
+      <h2>入手したカードの性能の決まりかた</h2>
+      <ul>
+        <li>攻撃力・物理防御力・魔法防御力は、それぞれ「上限値の半分〜上限値」の範囲からランダムに決まる。</li>
+        <li>攻撃タイプはカードの種類ごとにPかMが決まっているが、128分の1の確率でXになることがある。</li>
+        <li>三角マークは、まず個数が下の確率で決まり、そのあとランダムな場所に配置される。</li>
+        <li>拾ったり手渡されたりするカードも同じ。入手直前にセーブしておけば、三角マークの配置が理想的になるまでやり直せる。</li>
+      </ul>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>三角マークの個数</th><th>0個</th><th>1個</th><th>2個</th><th>3個</th><th>4個</th><th>5個</th><th>6個</th><th>7個</th><th>8個</th></tr></thead>
+          <tbody><tr><th>確率</th><td>1%</td><td>8%</td><td>25%</td><td>31%</td><td>18%</td><td>9%</td><td>5%</td><td>2%</td><td>1%</td></tr></tbody>
+        </table>
+      </div>
+
+      <h2>強いカードとは</h2>
+      <ul>
+        <li>各防御力が高いカードは、カードバトルを挑まれても負けにくい（裏返されにくい）。さらにそのカードをAタイプにすれば、攻撃にも使える。</li>
+        <li>物理防御力と魔法防御力が高くても、攻撃力が低いとAタイプのカードが天敵になる。ただし対戦相手がAタイプのカードを使うのは、こちらのカードを奪ったときだけ。</li>
+        <li>DISC 1のミニゲーム「ナワトビ」の賞品としてげんじのカードとアレクサンドリアのカードを手に入れておけば、以降のカードゲームを有利に進められる。</li>
+        <li>DISC 3のミニゲーム「かけっこ」の賞品リボンのカードは、物理防御力と魔法防御力の上限値の合計が全カードの中で最高。</li>
+      </ul>
+
+      <h2>カードプレイヤーの特徴</h2>
+      <ul>
+        <li>対戦時に使うカードの種類と使用頻度はカードプレイヤーごとに決まっている。弱いカードばかり使う相手でも、低い確率で強めのカードを出すことがある。序盤の相手が強めのカードを使ってきたら、確実に勝ってそのカードを手に入れておく。</li>
+        <li>大半のカードプレイヤーには「基準のカード」があり、基準からカード番号で3番あとまでの計4種類を、それぞれ256分の60の確率で使う。加えて、基準から7・15・20・30番あとのカードを256分の12・2・1・1の確率で使う。例外として、ゴブリン・ファング・カエルのいずれかを低確率で使うプレイヤーもいる。</li>
+        <li>思考能力は4段階。高いカードプレイヤーほど勝率を考えて手堅く置く。低い相手は玉砕覚悟で戦う傾向があるので、守りを重視して応戦すると無難。相手の強さは思考能力より、使うカードの種類に大きく左右される。</li>
+      </ul>
+
+      <h2>基本戦略</h2>
+      <ul>
+        <li>カードバトルにランダムの要素があり、コンボという逆転のシステムもあるので、安全確実な戦法はない。負ける可能性を最小限に抑える戦いかたを心がける。能力値の低い順にカードを置いていくと比較的安全。敗色が濃くなったらパーフェクト負けしないように戦う。奪われたカードを取り返すときは、手持ちの強いカードだけを選んで総力戦をかける。</li>
+        <li><strong>コンボを味方につける</strong>：すでに置いてあるカードに何回カードバトルを挑めるか（隣の空いている三角マークの数）に気をつける。隣の空いている三角マークがひとつしかないカードは、相手側のカードでコンボが狙えそうなら優先的に攻撃する。自分側のカードなら、相手のコンボを防ぐために何らかのカードでフタをしておく。三角マークが多いカードの周囲にカードを置いていくと、コンボによる逆転負けの危険が高まる。</li>
+        <li><strong>攻撃の順番</strong>：三角マークが向き合うカードが複数あるときは、各防御力や三角マークの向きに注目し、裏返せる枚数と負けたときの被害を考えて順番を決める。「防御力の低いカードを先、三角マークの多いカードはあと」にするのが安全。</li>
+        <li><strong>成長を考えて戦う</strong>：攻撃タイプを成長させたいなら、カードバトルをくり返す戦いをする。三角マークが多くて防御力の低いカードを最初に置き、自分と相手で交互に裏返していくと効率がよい。最後の一手で、最初に置いたカードを周囲のカードごと裏返しておく。</li>
+      </ul>
+
+      <h2>コレクターズレベル</h2>
+      <p>
+        カード画面では、収集の度合いが「収集ポイント」と「コレクターズレベル」で示される。収集ポイントは次の式で計算され、その時点で所持しているカードが対象なので、カードを手放すとポイントが減ることもある。
+      </p>
+      <pre><code>所持しているカードの種類 × 10
+＋ Xタイプのカードの枚数 × 1
+＋ Aタイプのカードの枚数 × 2
+＋ 三角マークの配置が重複していないカードの枚数 × 5</code></pre>
+      <p>
+        カード1枚あたりの収集ポイントは最高17なので、17×100枚＝1700が最高値。全種類を集め、すべてをAタイプまで成長させ、三角マークの配置が重複しないように集める必要がある。ネミングウェイのカードはDISC 4になると手に入らなくなるので、DISC 3までに入手しておく。
+      </p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>収集ポイント</th><th>コレクターズレベル</th><th>収集ポイント</th><th>コレクターズレベル</th></tr></thead>
+          <tbody>
+            <tr><td class="num">0〜299</td><th>ビギナー</th><td class="num">1350〜1359</td><th>チャンピオン</th></tr>
+            <tr><td class="num">300〜399</td><th>かけ出し</th><td class="num">1360〜1369</td><th>アナライザー</th></tr>
+            <tr><td class="num">400〜499</td><th>選手</th><td class="num">1370〜1379</td><th>スゴ腕</th></tr>
+            <tr><td class="num">500〜599</td><th>はん長</th><td class="num">1380〜1389</td><th>エキスパート</th></tr>
+            <tr><td class="num">600〜699</td><th>ファン</th><td class="num">1390〜1399</td><th>シャーク</th></tr>
+            <tr><td class="num">700〜799</td><th>リーダー</th><td class="num">1400〜1419</td><th>スペシャリスト</th></tr>
+            <tr><td class="num">800〜899</td><th>コーチ</th><td class="num">1420〜1469</td><th>鉄人</th></tr>
+            <tr><td class="num">900〜999</td><th>アドバイザー</th><td class="num">1470〜1509</td><th>たつ人</th></tr>
+            <tr><td class="num">1000〜1099</td><th>ディレクター</th><td class="num">1510〜1549</td><th>マエストロ</th></tr>
+            <tr><td class="num">1100〜1199</td><th>ディーラー</th><td class="num">1550〜1599</td><th>キング</th></tr>
+            <tr><td class="num">1200〜1249</td><th>トレーダー</th><td class="num">1600〜1649</td><th>名人</th></tr>
+            <tr><td class="num">1250〜1299</td><th>コマンダー</th><td class="num">1650〜1679</td><th>オーソリティー</th></tr>
+            <tr><td class="num">1300〜1319</td><th>ドクター</th><td class="num">1680〜1689</td><th>てい王</th></tr>
+            <tr><td class="num">1320〜1329</td><th>プロフェッサー</th><td class="num">1690〜1697</td><th>ザ・プレイヤー</th></tr>
+            <tr><td class="num">1330〜1339</td><th>ベテラン</th><td class="num">1698〜1699</td><th>マスター</th></tr>
+            <tr><td class="num">1340〜1349</td><th>フリーク</th><td class="num">1700</td><th>ザ・コレクター（実際には表示されない）</th></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>三角マークの配置の重複を避けるには</h3>
+      <ul>
+        <li>カードを手に入れるたびに、三角マークの配置が所持カードのどれかと重複していないか調べる必要がある。配置を数字に置きかえて（左下1・下2・右下3・左4・右6・左上7・上8・右上9）テキストファイルに記録し、入手するたびに検索する方法が便利。</li>
+        <li>セーブしたあとにわざとカードを捨て、収集ポイントの減り具合から重複したカードを調べる方法もある。</li>
+        <li>三角マークの配置は2の8乗＝256パターンある。重複したときに残すカードは「再入手が難しいもの ＞ 攻撃タイプがXやAのもの ＞ そのほか」の優先順位で決める。</li>
+      </ul>
+      <h3>1700ポイントに必要なこと</h3>
+      <ul>
+        <li>難関はすべてのカードをAタイプにすること。手間は全種類を集めるときの数倍におよぶ。</li>
+        <li>相手がXタイプのカードを使ってきたら、のがさず奪ってカードを成長させる手間をはぶく。</li>
+        <li>Xタイプのカードは相手から奪える可能性があるので、攻撃タイプの成長は「PまたはM→X」より「X→A」を優先させる。</li>
+        <li>攻撃タイプが成長したときは、すぐにセーブしておく。</li>
+      </ul>
+
+      <div class="related">
+        <h2>関連ページ</h2>
+        <ul>
+          <li><a href="/ff9/cards/rules/">ルールとカードバトルの仕組み</a></li>
+          <li><a href="/ff9/cards/list/">カードデータリスト</a></li>
+          <li><a href="/ff9/cards/players/">カードプレイヤーリスト</a></li>
+          <li><a href="/ff9/minigames/action/">ナワトビ（げんじ・アレクサンドリアのカード）</a></li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-links">
+        <a href="/ff9/">トップ</a>
+        <a href="/ff9/about/">このWikiについて</a>
+        <a href="/ff9/privacy/">プライバシーポリシー</a>
+        <a href="/ff9/contact/">お問い合わせ</a>
+      </p>
+      <p class="footer-copy">
+        当サイトは非公式のファンサイトです。ゲーム内の画像・名称等の著作権は各権利者に帰属します。<br>
+        &copy; 2026 ファイナルファンタジーIX 攻略Wiki      </p>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top" aria-label="ページ上部へ">▲</a>
+
+  <script src="/ff9/js/main.js?v=a69a038c"></script>
+</body>
+</html>

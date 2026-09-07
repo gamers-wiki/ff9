@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>バトルシステム - ファイナルファンタジーIX 攻略Wiki</title>
+  <meta name="description" content="FF9のバトルの基本。ATBゲージとアクティブ・ウエイトの違い、バックアタックと先制攻撃の確率、共通コマンド（たたかう・チェンジ・ぼうぎょ）、逃走の仕組みと成功率、パーティー編成と前列・後列、仲間の加入と離脱。">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://gamers-wiki.github.io/ff9/battle/">
+
+  <meta property="og:site_name" content="ファイナルファンタジーIX 攻略Wiki">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="バトルシステム - ファイナルファンタジーIX 攻略Wiki">
+  <meta property="og:description" content="FF9のバトルの基本。ATBゲージとアクティブ・ウエイトの違い、バックアタックと先制攻撃の確率、共通コマンド（たたかう・チェンジ・ぼうぎょ）、逃走の仕組みと成功率、パーティー編成と前列・後列、仲間の加入と離脱。">
+  <meta property="og:url" content="https://gamers-wiki.github.io/ff9/battle/">
+  <meta property="og:image" content="https://gamers-wiki.github.io/ff9/images/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="バトルシステム - ファイナルファンタジーIX 攻略Wiki">
+  <meta name="twitter:description" content="FF9のバトルの基本。ATBゲージとアクティブ・ウエイトの違い、バックアタックと先制攻撃の確率、共通コマンド（たたかう・チェンジ・ぼうぎょ）、逃走の仕組みと成功率、パーティー編成と前列・後列、仲間の加入と離脱。">
+  <meta name="twitter:image" content="https://gamers-wiki.github.io/ff9/images/ogp.png">
+
+  <link rel="icon" href="/ff9/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/ff9/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/ff9/apple-touch-icon.png">
+  <meta name="theme-color" content="#171433">
+
+  <link rel="stylesheet" href="/ff9/css/style.css?v=4bada4bf">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップ","item":"https://gamers-wiki.github.io/ff9/"},{"@type":"ListItem","position":2,"name":"バトル","item":"https://gamers-wiki.github.io/ff9/battle/"}]}</script>
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/ff9/" class="site-logo">
+        <span class="logo-mark" aria-hidden="true">✦</span>
+        <span class="logo-text">
+          <span class="logo-title">FINAL FANTASY IX</span>
+          <span class="logo-sub">攻略Wiki</span>
+        </span>
+      </a>
+      <form class="site-search" action="/ff9/search/" method="get" role="search">
+        <input type="search" name="q" placeholder="Wiki内を検索（例：ジタン、合成、チョコグラフ）" aria-label="Wiki内検索" maxlength="100">
+        <button type="submit">検索</button>
+      </form>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== グローバルナビ ===== -->
+  <nav class="global-nav" id="global-nav">
+    <ul>
+      <li><a href="/ff9/">トップ</a></li>
+      <li><a href="/ff9/story/">ストーリー攻略</a></li>
+      <li><a href="/ff9/characters/">キャラクター</a></li>
+      <li><a href="/ff9/battle/" class="current">バトル</a></li>
+      <li><a href="/ff9/abilities/">アビリティ</a></li>
+      <li><a href="/ff9/eidolons/">召喚獣</a></li>
+      <li><a href="/ff9/items/">アイテム・装備</a></li>
+      <li><a href="/ff9/monsters/">モンスター</a></li>
+      <li><a href="/ff9/chocobo/">チョコボ</a></li>
+      <li><a href="/ff9/minigames/">ミニゲーム</a></li>
+      <li><a href="/ff9/cards/">クアッドミスト</a></li>
+      <li><a href="/ff9/extra/">やり込み</a></li>
+      <li class="nav-column"><a href="/ff9/column/">解説</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== パンくず ===== -->
+  <div class="breadcrumb">
+    <ol>
+      <li><a href="/ff9/">トップ</a></li>
+      <li>バトル</li>
+    </ol>
+  </div>
+
+  <div class="layout layout-2col">
+    <aside class="sidebar sidebar-left">
+      <div class="side-box">
+        <h2 class="side-title">メニュー</h2>
+        <ul class="side-menu">
+          <li><a href="/ff9/story/">ストーリー攻略チャート</a></li>
+          <li><a href="/ff9/characters/">キャラクター</a></li>
+          <li><a href="/ff9/battle/">バトルシステム</a></li>
+          <li><a href="/ff9/abilities/">アビリティ</a></li>
+          <li><a href="/ff9/eidolons/">召喚獣</a></li>
+          <li><a href="/ff9/items/">アイテム・装備</a></li>
+          <li><a href="/ff9/items/synthesis/">合成リスト</a></li>
+          <li><a href="/ff9/monsters/">モンスター図鑑</a></li>
+          <li><a href="/ff9/chocobo/">チョコボ</a></li>
+          <li><a href="/ff9/minigames/">ミニゲーム</a></li>
+          <li><a href="/ff9/cards/">クアッドミスト</a></li>
+          <li><a href="/ff9/extra/">やり込み・サブイベント</a></li>
+          <li><a href="/ff9/extra/missable/">取り返しのつかない要素</a></li>
+          <li><a href="/ff9/column/">世界設定・年表・用語集</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">キャラクター</h2>
+        <ul class="side-menu char-list">
+          <li><a href="/ff9/characters/zidane/">ジタン</a></li>
+          <li><a href="/ff9/characters/vivi/">ビビ</a></li>
+          <li><a href="/ff9/characters/garnet/">ガーネット</a></li>
+          <li><a href="/ff9/characters/steiner/">スタイナー</a></li>
+          <li><a href="/ff9/characters/freya/">フライヤ</a></li>
+          <li><a href="/ff9/characters/quina/">クイナ</a></li>
+          <li><a href="/ff9/characters/eiko/">エーコ</a></li>
+          <li><a href="/ff9/characters/amarant/">サラマンダー</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title side-title-column">解説</h2>
+        <ul class="side-menu column-list">
+          <li><a href="/ff9/column/">記事一覧</a></li>
+        </ul>
+      </div>
+
+      <div class="side-box">
+        <h2 class="side-title">Wikiについて</h2>
+        <ul class="side-menu">
+          <li><a href="/ff9/about/">このWikiについて</a></li>
+          <li><a href="/ff9/contact/">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </aside>
+    <main class="content">
+
+      <div class="article-header">
+        <h1>バトルシステム</h1>
+        <div class="article-meta"><span>カテゴリ：バトル</span></div>
+      </div>
+
+      <p>
+        FF9のバトルはアクティブタイムバトル（ATB）。ATBゲージがたまったキャラクターから順にコマンドを入力し、最大4人のパーティーで戦う。
+        このページでは基本のルールを、くわしい内容は各ページにまとめている。
+      </p>
+      <ul class="monster-nav">
+        <li><a href="/ff9/battle/commands/">キャラクターごとの専用コマンド</a></li>
+        <li><a href="/ff9/battle/stats/">能力値・Lv・成長</a></li>
+        <li><a href="/ff9/battle/damage/">ダメージと属性</a></li>
+        <li><a href="/ff9/battle/status/">ステータス異常</a></li>
+        <li><a href="/ff9/battle/trance/">トランス・特殊な状況・テクニック集</a></li>
+      </ul>
+
+      <div class="toc" data-auto-toc></div>
+
+      <h2>ATBゲージ</h2>
+      <ul>
+        <li>各キャラクターが行動できるようになるまでの時間は、画面右下のATBゲージで分かる。満タンになるとコマンドウインドウが出て入力でき、実行後はゼロにもどって再び増えはじめる。</li>
+        <li>増加速度は素早さの値と、ヘイスト・スロウ・ストップ・石化・戦闘不能の有無で変わる。素早さを上げたりヘイスト状態になれば行動のペースを早められる。</li>
+        <li>逃走、カウンター、剣技「突撃」はATBゲージが満タンでなくても行える。カウンター（サポートアビリティ「カウンター」の反撃や「オートポーション」の回復など、相手の攻撃に対して自動で発動する動作）はATBゲージの量を変えないので、カウンター→通常の攻撃という連続行動もできる。</li>
+        <li>行動はつねに1体ずつ行われ、実行する順番はコマンドを決定した順番と同じ。先に入力したキャラクターが行動を終えるまで、あとから入力したキャラクターはコマンドを実行できない。</li>
+      </ul>
+      <h3>アクティブとウエイト</h3>
+      <p>
+        コンフィグでATBを「アクティブ」と「ウエイト」のどちらかにできる。初期設定のウエイトでは、アビリティやアイテムを選ぶウインドウの表示中や対象を選んでいるあいだはバトル内の時間が止まる（ATBゲージが増えず、ステータス異常の効果時間や、死の宣告・徐々に石化のカウントダウンも止まる）。アクティブではそうした状況でも時間が進む。すばやい操作が苦手ならウエイトのままがよい。
+      </p>
+      <p>ウエイトなら、コマンドウインドウの開閉で敵の行動ペースを遅らせたり、ステータス異常の効果時間を調整したりできる。ボス戦でとくに役立つ。</p>
+      <ul>
+        <li>敵の行動中はウインドウを閉じて、味方のATBゲージを増やす。味方の行動中はウインドウを開いて、敵のATBゲージを増やさない。</li>
+        <li>時間制限のあるステータス異常は、味方に有利なものならウインドウを開いて効果を長引かせ、不利なものなら閉じて時間を経過させる。</li>
+        <li>リジェネ状態のときはこまめにウインドウを閉じてHPを回復させ、徐々に石化や死の宣告のときはこまめに開いてカウントを一時停止させる。</li>
+      </ul>
+      <h3>バトル開始時のATBゲージ、バックアタックと先制攻撃</h3>
+      <ul>
+        <li>バトル開始時のATBゲージの量は、味方も敵もゼロから満タンの範囲でランダム。バックアタックや先制攻撃が発生したときは特定の量になる。ミミックやデスゲイズなど、開始時に必ず満タンのモンスターもいる。</li>
+        <li><strong>バックアタック</strong>は通常32分の3（約9%）で発生し、味方全員が敵に背を向けた状態になって前列と後列が逆転する。開始直後は味方全員のATBゲージが数秒間ゼロのままで、背後攻撃で大ダメージを受ける危険が高い。サポートアビリティ「警戒」を装備すると発生しなくなる（アーモデュラハン戦だけは装備していても確実に発生）。</li>
+        <li><strong>先制攻撃</strong>は通常16分の1（約6%）、「先制攻撃率アップ」装備時は256分の85（約33%）で発生する。バックアタックの立場を逆転させたような状態で、味方全員のATBゲージが満タン直前までたまった状態で始まる。バックアタックが発生することになったときは先制攻撃の判定が行われないので、「警戒」で防いでおかないと先制攻撃の機会が減る。ボスなど、どちらも発生しないモンスターもいる。</li>
+      </ul>
+
+      <h2>共通コマンド</h2>
+      <p>ATBゲージが満タンになると画面左下にコマンドウインドウが出る。「たたかう」「アイテム」「チェンジ」「ぼうぎょ」は全キャラクター共通で、ウインドウの上から2〜3番目がキャラクターごとの<a href="/ff9/battle/commands/">専用コマンド</a>。</p>
+      <h3>たたかう</h3>
+      <p>武器で攻撃する基本のコマンド。装備している武器の攻撃力が敵の物理防御力を上まわっていないと十分なダメージを与えられない。主力にするなら次のサポートアビリティで性能を上げる。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>アビリティ</th><th>効果</th></tr></thead>
+          <tbody>
+            <tr><th>与一の心</th><td>攻撃時のみ対象の物理回避率がゼロになる</td></tr>
+            <tr><th>忍者の教え</th><td>後列にいても与えるダメージ量が半減しなくなる</td></tr>
+            <tr><th>MP消費攻撃</th><td>MPを消費するかわりに与えるダメージ量が増す</td></tr>
+            <tr><th>バードキラー</th><td>飛行モンスターに与えるダメージ量が増す</td></tr>
+            <tr><th>ムシキラー</th><td>昆虫モンスターに与えるダメージ量が増す</td></tr>
+            <tr><th>ストーンキラー</th><td>石モンスターに与えるダメージ量が増す</td></tr>
+            <tr><th>アンデッドキラー</th><td>アンデッドモンスターに与えるダメージ量が増す</td></tr>
+            <tr><th>ドラゴンキラー</th><td>ドラゴン族モンスターに与えるダメージ量が増す</td></tr>
+            <tr><th>デビルキラー</th><td>魔族モンスターに与えるダメージ量が増す</td></tr>
+            <tr><th>ビーストキラー</th><td>獣モンスターに与えるダメージ量が増す</td></tr>
+            <tr><th>マンイーター</th><td>人型モンスターに与えるダメージ量が増す</td></tr>
+            <tr><th>追加効果発動</th><td>武器が持つ追加効果が発生するようになる</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>ラケット以外の武器で後列から「たたかう」を行うと、ダメージは前列の半分になる。ただし命中率と追加効果の発生確率は変わらないので、後列のキャラクターに追加効果を持つ武器と「追加効果発動」を装備させ、ステータス異常を起こす目的で「たたかう」を行わせる手がある。</p>
+      <h3>チェンジ・ぼうぎょ</h3>
+      <ul>
+        <li><strong>チェンジ</strong>：コマンドウインドウの表示中に方向キーの←を入れたまま○ボタン。前列と後列を入れかえ、物理攻撃で受ける（与える）ダメージを変える。秘技「あれはなんだ」を使うと、バトル中に変えた配置がもとにもどる。</li>
+        <li><strong>ぼうぎょ</strong>：方向キーの→を入れたまま○ボタン。物理攻撃で受けるダメージと敵の物理攻撃の命中率が半分になる。実行後はATBゲージがゼロにもどり、別のコマンドを入力した瞬間に効果が切れる。緊急時に備えて待機させるキャラクターに使わせるのがよい。</li>
+      </ul>
+
+      <h2>バトルから逃げる</h2>
+      <p>L1＋R1ボタンを押しつづけるか、秘技「とんずら」で逃げられる。相手によっては逃げられず、味方の誰かがストップ・睡眠・フリーズ・石化・猛毒・ゾンビ・戦闘不能（フライヤが「ジャンプ」で空中にいる状況も含む）のいずれかのときも逃げられない。</p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact">
+          <thead><tr><th>方法</th><th>特徴</th></tr></thead>
+          <tbody>
+            <tr><th>L1＋R1</th><td>ATBゲージが満タンでなくても行える。「逃げてもギル」装備時は成功時にギルが得られる。成否はランダムで、背後攻撃を受ける可能性がある</td></tr>
+            <tr><th>とんずら</th><td>逃げられる状況なら確実に逃げられる。逃げるときに所持ギルを落とす。「逃げてもギル」装備時でもギルは得られない</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li>逃走の成功率は味方と敵それぞれの平均Lvで決まり、味方の平均Lvが高いほど上がる（極端に低いとゼロになることもある）。判定はL1＋R1を押した時間の合計が1.0秒を超えるごとに行われる。入力中に「逃げられない！」と表示されないバトルなら、「とんずら」で確実に逃げられる。</li>
+        <li>L1＋R1を押しながら何らかの行動をとっても成功率は下がらない。逃げられるまでに「ぬすむ」や「ジュエル」でアイテムを集められる。リスクを減らすには、敵が攻撃してきたらダメージが表示される直前だけ入力をやめて背後攻撃を避ける、「ぼうぎょ」で守る、演出の長いアビリティで時間をかせぐ、敵に不利なステータス異常で足止めする。</li>
+      </ul>
+
+      <h2>操作キャラクターとパーティー編成</h2>
+      <ul>
+        <li>バトルで使えるキャラクターは全12人。シナ・マーカス・ブランク・ベアトリクスは特定の時期だけ仲間になるサブキャラクターで、トランスゲージがなく、装備品からアビリティを引き出せない（最初から修得しているアビリティだけ使える）。</li>
+        <li>女性キャラクター（ガーネット・フライヤ・エーコ・ベアトリクス）は、カチューシャなどの女性専用アイテムを装備でき（一部はクイナも可）、ジタンが「女の子をかばう」を装備しているときに敵の攻撃からかばってもらえ、ラミアの「誘惑」を無効化できる。</li>
+        <li>バトルに同時に参加できるのは最大4人。仲間が5人以上のときは4人を選ぶ。いったん決めたメンバーはしばらく変更できないことがある。シナリオのタイミングによっては特定のキャラクターを必ず加える必要があり、基本的にジタンははずせない（記憶の場所やクリスタルワールドをのぞく）。</li>
+        <li>メンバーの並び順はバトルの展開に影響しないが、複数のメンバーが同時に行動できる状況（複数がカウンターの条件を同時に満たしたときや、剣技「突撃」で複数が攻撃するとき）だけは、メニュー画面の上から順に行動する。</li>
+      </ul>
+      <h3>前列と後列</h3>
+      <p>
+        メニューの「たいけい」で各キャラクターの配置を変えられる。後列にいるキャラクターは「たたかう」で与えるダメージが半分になる（ラケット装備時と「忍者の教え」装備時をのぞく）かわりに、敵の物理攻撃で受けるダメージも半分になる。「たたかう」を使わないキャラクターは後列に置くのがよい。モンスターに前列・後列の概念はない。
+        配置はメンバーがパーティーからはずれても変わらないが、パンデモニウムでバトル中に仲間が駆けつける場面では味方全員が前列になるので、すぐ「チェンジ」で後列へ移す。
+      </p>
+      <h3>仲間の加入と離脱</h3>
+      <p>
+        仲間の人数はシナリオの進行で変わり、最終的に8人になる。クイナだけは仲間にする時期をある程度コントロールできる。離脱中のキャラクターからは装備品を回収できないので、長期間離脱するキャラクターからは離脱する直前に装備をはずしておく。
+        ただし、デザートエンプレス（帰還時）で離脱するエーコと、ブラン・バルで離脱するガーネット・スタイナー・フライヤは、その後のバトル中に復帰するので装備をはずさないでおく。
+      </p>
+      <div class="table-scroll">
+        <table class="wiki-table wiki-table-compact ability-table">
+          <thead><tr><th>離脱するタイミング</th><th>キャラクター</th><th>最後に装備をはずせる場所</th></tr></thead>
+          <tbody>
+            <tr><td class="wrap">DISC 1で魔の森を脱出するとき</td><th>ブランク</th><td class="wrap">魔の森の獣道</td></tr>
+            <tr><td class="wrap">DISC 1でリンドブルム巨大城に到着したとき</td><th>ガーネット、スタイナー</th><td class="wrap">リンドブルム巨大城（通常時）の廊下</td></tr>
+            <tr><td class="wrap">DISC 1の終了時</td><th>ジタン、ビビ、フライヤ、クイナ</th><td class="wrap">ブルメシアの宮殿前広場（直後にバトルが始まり、その終了後に離脱）</td></tr>
+            <tr><td class="wrap">DISC 2でトレノからアレクサンドリア城に到着したとき</td><th>ガーネット、スタイナー、マーカス</th><td class="wrap">ガルガン・ルーの乗降口（直後にバトルが始まり、その終了後に離脱）</td></tr>
+            <tr><td class="wrap">DISC 2でクレイラの街から脱出するとき</td><th>クイナ</th><td class="wrap">クレイラの街の大聖堂（直後にバトルが始まり、その終了後に離脱）</td></tr>
+            <tr><td class="wrap">DISC 2でアレクサンドリア城の牢獄から脱獄したあと</td><th>マーカス</th><td class="wrap">アレクサンドリア城（ダガー救出時）の地下牢</td></tr>
+            <tr><td class="wrap">DISC 2でアレクサンドリア城の地下からガーネットを救出したあと</td><th>フライヤ</th><td class="wrap">アレクサンドリア城（ダガー救出時）の階段（直後にバトルが始まり、その終了後に離脱）</td></tr>
+            <tr><td class="wrap">DISC 2でアレクサンドリア城から脱出するとき</td><th>スタイナー</th><td class="wrap">アレクサンドリア城（ダガー救出時）の階段（直後にバトルが始まり、その終了後に離脱）</td></tr>
+            <tr><td class="wrap">DISC 2でコンデヤ・パタ山道へ行くとき</td><th>クイナ</th><td class="wrap">コンデヤ・パタの出口</td></tr>
+            <tr><td class="wrap">DISC 3でアレクサンドリアを襲う霧の魔獣とのバトル終了後</td><th>ベアトリクス</th><td class="wrap">アレクサンドリア（襲撃時）の大通り（直後にバトルが始まり、その終了後に離脱）</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="related">
+        <h2>関連ページ</h2>
+        <ul>
+          <li><a href="/ff9/battle/commands/">専用コマンド</a></li>
+          <li><a href="/ff9/abilities/support/">サポートアビリティ一覧</a></li>
+          <li><a href="/ff9/monsters/">モンスター図鑑（EXP・AP・戦利品の仕組み）</a></li>
+          <li><a href="/ff9/characters/">キャラクター</a></li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-links">
+        <a href="/ff9/">トップ</a>
+        <a href="/ff9/about/">このWikiについて</a>
+        <a href="/ff9/privacy/">プライバシーポリシー</a>
+        <a href="/ff9/contact/">お問い合わせ</a>
+      </p>
+      <p class="footer-copy">
+        当サイトは非公式のファンサイトです。ゲーム内の画像・名称等の著作権は各権利者に帰属します。<br>
+        &copy; 2026 ファイナルファンタジーIX 攻略Wiki      </p>
+    </div>
+  </footer>
+
+  <a href="#" class="to-top" aria-label="ページ上部へ">▲</a>
+
+  <script src="/ff9/js/main.js?v=a69a038c"></script>
+</body>
+</html>
